@@ -14,7 +14,7 @@ final class EasyCodingStandardExtension extends Extension
     public function load(array $configs, ContainerBuilder $containerBuilder): void
     {
         $config = __DIR__ . '/../../../config';
-        if (file_exists($config . '/config.php')) {
+        if (! file_exists($config . '/config.php')) {
             $config = __DIR__ . '/../../../../config';
         }
 
