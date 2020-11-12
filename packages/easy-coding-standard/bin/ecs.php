@@ -22,11 +22,11 @@ use Symplify\SetConfigResolver\Exception\SetNotFoundException;
 use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
 if (! class_exists(ShellCode::class)) {
-    class_alias(ShellCode::class, 'Symplify\PackageBuilder\Console\ShellCode');
+    class_alias('Symplify\PackageBuilder\Console\ShellCode', ShellCode::class);
 }
 
 if (! class_exists(SetAwareConfigResolver::class)) {
-    class_alias(SetAwareConfigResolver::class, 'Symplify\SetConfigResolver\SetAwareConfigResolver');
+    class_alias('Symplify\SetConfigResolver\SetAwareConfigResolver', SetAwareConfigResolver::class);
 }
 
 
