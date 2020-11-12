@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 // decoupled in own "*.php" file, so ECS, Rector and PHPStan works out of the box here
 
-if (class_exists(\Symplify\PackageBuilder\Console\ShellCode::class)) {
+if (! class_exists(\Symplify\PackageBuilder\Console\ShellCode::class)) {
     class_alias(\Symplify\PackageBuilder\Console\ValueObject\ShellCode::class, \Symplify\PackageBuilder\Console\ShellCode::class);
 }
 
-if (class_exists(\Symplify\SetConfigResolver\SetAwareConfigResolver::class)) {
+if (! class_exists(\Symplify\SetConfigResolver\SetAwareConfigResolver::class)) {
     class_alias(\Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver::class, \Symplify\SetConfigResolver\SetAwareConfigResolver::class);
 }
 
