@@ -7,7 +7,7 @@ declare(strict_types=1);
 use PHP_CodeSniffer\Util\Tokens;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symplify\EasyCodingStandard\Bootstrap\ValueObject\ConfigHasher;
-use Symplify\EasyCodingStandard\Bootstrap\ConfigShifter;
+use Symplify\EasyCodingStandard\Bootstrap\ValueObject\ConfigShifter;
 use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
 use Symplify\EasyCodingStandard\Configuration\Configuration;
 use Symplify\EasyCodingStandard\Console\EasyCodingStandardConsoleApplication;
@@ -45,6 +45,10 @@ if (! class_exists(EasyCodingStandardSetProvider::class)) {
 
 if (! class_exists(ConfigHasher::class)) {
     class_alias(\Symplify\EasyCodingStandard\Bootstrap\ConfigHasher::class, ConfigHasher::class);
+}
+
+if (! class_exists(ConfigShifter::class)) {
+    class_alias(\Symplify\EasyCodingStandard\Bootstrap\ConfigShifter::class, ConfigShifter::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
