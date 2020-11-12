@@ -18,7 +18,7 @@ use Symplify\PackageBuilder\Console\Input\ValueObject\StaticInputDetector;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\SetConfigResolver\Bootstrap\ValueObject\InvalidSetReporter;
-use Symplify\SetConfigResolver\Exception\ValueObject\SetNotFoundException;
+use Symplify\SetConfigResolver\ValueObject\SetNotFoundException;
 use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
 // performance boost
@@ -64,7 +64,7 @@ if (! class_exists(InvalidSetReporter::class)) {
 }
 
 if (! class_exists(SetNotFoundException::class)) {
-    class_alias(\Symplify\SetConfigResolver\Exception\SetNotFoundException::class, SetNotFoundException::class);
+    class_alias(\Symplify\SetConfigResolver\SetNotFoundException::class, SetNotFoundException::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
