@@ -26,7 +26,7 @@ if (! class_exists(ShellCode::class)) {
 }
 
 if (! class_exists(SetAwareConfigResolver::class)) {
-    class_alias('Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver', SetAwareConfigResolver::class);
+    class_alias('Symplify\SetConfigResolver\SetAwareConfigResolver', SetAwareConfigResolver::class);
 }
 
 // performance boost
