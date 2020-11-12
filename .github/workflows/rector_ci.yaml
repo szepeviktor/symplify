@@ -38,7 +38,7 @@ jobs:
             ## First run Rector - here can't be --dry-run !!! it would stop the job with it and not commit anything in the future
             -   run: vendor/bin/rector rectify --config rector-ci.php --ansi --no-progress-bar
 
-            # -   run: packages/easy-coding-standard/bin/ecs check --match-git-diff --fix --ansi
+            -   run: packages/easy-coding-standard/bin/ecs check --match-git-diff --fix --ansi
 
             -
                 uses: EndBug/add-and-commit@v5
