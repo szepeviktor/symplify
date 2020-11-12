@@ -16,10 +16,10 @@ use Symplify\EasyCodingStandard\Set\ConstantReflectionSetFactory;
 use Symplify\EasyCodingStandard\Set\EasyCodingStandardSetProvider;
 use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter;
 use Symplify\SetConfigResolver\Exception\SetNotFoundException;
-use Symplify\SetConfigResolver\SetAwareConfigResolver;
+use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
 // performance boost
 gc_disable();
@@ -31,12 +31,12 @@ $autoloadIncluder->autoloadProjectAutoloaderFile('/../../autoload.php');
 $autoloadIncluder->includeDependencyOrRepositoryVendorAutoloadIfExists();
 $autoloadIncluder->includePhpCodeSnifferAutoloadIfNotInPharAndInitliazeTokens();
 
-if (! class_exists(\Symplify\PackageBuilder\Console\ShellCode::class)) {
-    class_alias(\Symplify\PackageBuilder\Console\ShellCode::class, \Symplify\PackageBuilder\Console\ValueObject\ShellCode::class);
+if (! class_exists(ShellCode::class)) {
+    class_alias(\Symplify\PackageBuilder\Console\ShellCode::class, ShellCode::class);
 }
 
-if (! class_exists(\Symplify\SetConfigResolver\SetAwareConfigResolver::class)) {
-    class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, \Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver::class);
+if (! class_exists(SetAwareConfigResolver::class)) {
+    class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, SetAwareConfigResolver::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
