@@ -64,7 +64,7 @@ if (! class_exists(InvalidSetReporter::class)) {
 }
 
 if (! class_exists(SetNotFoundException::class)) {
-    class_alias(\SSymplify\SetConfigResolver\Exception\SetNotFoundException::class, SetNotFoundException::class);
+    class_alias(\Symplify\SetConfigResolver\Exception\SetNotFoundException::class, SetNotFoundException::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
