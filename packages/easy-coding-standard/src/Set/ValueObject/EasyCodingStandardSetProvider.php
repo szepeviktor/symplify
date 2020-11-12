@@ -7,6 +7,7 @@ use Symplify\EasyCodingStandard\Set\ConstantReflectionSetFactory;
 use Symplify\EasyCodingStandard\ValueObject\Set\SetList;
 use Symplify\SetConfigResolver\Provider\ValueObject\AbstractSetProvider;
 use Symplify\SetConfigResolver\ValueObject\Set;
+
 final class EasyCodingStandardSetProvider extends AbstractSetProvider
 {
     /**

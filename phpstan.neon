@@ -53,8 +53,6 @@ parameters:
         # 3rd party
         - packages/package-builder/src/Yaml/ParametersMerger.php
 
-        - packages/easy-coding-standard/bin/ecs.php
-
         # requires PHP 7.4
         - 'packages/easy-hydrator/tests/Fixture/TypedProperty.php'
         - 'packages/easy-hydrator/tests/TypedPropertiesTest.php'

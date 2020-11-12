@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\SetConfigResolver\Tests\ConfigResolver\Source;
 
 use Symplify\SetConfigResolver\Contract\SetProviderInterface;
-use Symplify\SetConfigResolver\Provider\AbstractSetProvider;
+use Symplify\SetConfigResolver\Provider\ValueObject\AbstractSetProvider;
 use Symplify\SetConfigResolver\ValueObject\Set;
 use Symplify\SmartFileSystem\SmartFileInfo;
 

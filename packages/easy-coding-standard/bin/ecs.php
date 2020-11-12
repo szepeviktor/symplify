@@ -31,42 +31,6 @@ $autoloadIncluder->autoloadProjectAutoloaderFile('/../../autoload.php');
 $autoloadIncluder->includeDependencyOrRepositoryVendorAutoloadIfExists();
 $autoloadIncluder->includePhpCodeSnifferAutoloadIfNotInPharAndInitliazeTokens();
 
-if (! class_exists(ShellCode::class)) {
-    class_alias(\Symplify\PackageBuilder\Console\ShellCode::class, ShellCode::class);
-}
-
-if (! class_exists(SetAwareConfigResolver::class)) {
-    class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, SetAwareConfigResolver::class);
-}
-
-if (! class_exists(EasyCodingStandardSetProvider::class)) {
-    class_alias(\Symplify\EasyCodingStandard\Set\EasyCodingStandardSetProvider::class, EasyCodingStandardSetProvider::class);
-}
-
-if (! class_exists(ConfigHasher::class)) {
-    class_alias(\Symplify\EasyCodingStandard\Bootstrap\ConfigHasher::class, ConfigHasher::class);
-}
-
-if (! class_exists(ConfigShifter::class)) {
-    class_alias(\Symplify\EasyCodingStandard\Bootstrap\ConfigShifter::class, ConfigShifter::class);
-}
-
-if (! class_exists(EasyCodingStandardKernel::class)) {
-    class_alias(\Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel::class, EasyCodingStandardKernel::class);
-}
-
-if (! class_exists(StaticInputDetector::class)) {
-    class_alias(\Symplify\PackageBuilder\Console\Input\StaticInputDetector::class, StaticInputDetector::class);
-}
-
-if (! class_exists(InvalidSetReporter::class)) {
-    class_alias(\Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter::class, InvalidSetReporter::class);
-}
-
-if (! class_exists(SetNotFoundException::class)) {
-    class_alias(\Symplify\SetConfigResolver\Exception\SetNotFoundException::class, SetNotFoundException::class);
-}
-
 $symfonyStyleFactory = new SymfonyStyleFactory();
 $symfonyStyle = $symfonyStyleFactory->create();
 

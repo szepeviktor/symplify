@@ -8,6 +8,7 @@ use Symplify\SetConfigResolver\Contract\SetProviderInterface;
 use Symplify\SetConfigResolver\ValueObject\SetNotFoundException;
 use Symplify\SetConfigResolver\ValueObject\Set;
 use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
+
 abstract class AbstractSetProvider implements SetProviderInterface
 {
     /**
