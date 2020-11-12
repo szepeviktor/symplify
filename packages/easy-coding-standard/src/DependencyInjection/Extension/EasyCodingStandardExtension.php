@@ -15,7 +15,7 @@ final class EasyCodingStandardExtension extends Extension
     {
         $config = __DIR__ . '/../../../config';
         if (! realpath($config)) {
-            $config = __DIR__ . '/../../../config';
+            $config = __DIR__ . '/../../../../config';
         }
 
         // needed for parameter shifting of sniff/fixer params
