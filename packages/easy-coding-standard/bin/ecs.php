@@ -11,7 +11,7 @@ use Symplify\EasyCodingStandard\Bootstrap\ValueObject\ConfigShifter;
 use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
 use Symplify\EasyCodingStandard\Configuration\Configuration;
 use Symplify\EasyCodingStandard\Console\EasyCodingStandardConsoleApplication;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
 use Symplify\EasyCodingStandard\Set\ConstantReflectionSetFactory;
 use Symplify\EasyCodingStandard\Set\ValueObject\EasyCodingStandardSetProvider;
 use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
@@ -49,6 +49,10 @@ if (! class_exists(ConfigHasher::class)) {
 
 if (! class_exists(ConfigShifter::class)) {
     class_alias(\Symplify\EasyCodingStandard\Bootstrap\ConfigShifter::class, ConfigShifter::class);
+}
+
+if (! class_exists(EasyCodingStandardKernel::class)) {
+    class_alias(\Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel::class, EasyCodingStandardKernel::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
