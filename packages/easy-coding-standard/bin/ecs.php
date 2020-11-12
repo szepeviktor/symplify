@@ -17,7 +17,7 @@ use Symplify\EasyCodingStandard\Set\ValueObject\EasyCodingStandardSetProvider;
 use Symplify\PackageBuilder\Console\Input\ValueObject\StaticInputDetector;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
-use Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter;
+use Symplify\SetConfigResolver\Bootstrap\ValueObject\InvalidSetReporter;
 use Symplify\SetConfigResolver\Exception\SetNotFoundException;
 use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
@@ -57,6 +57,10 @@ if (! class_exists(EasyCodingStandardKernel::class)) {
 
 if (! class_exists(StaticInputDetector::class)) {
     class_alias(\Symplify\PackageBuilder\Console\Input\ValueObject\StaticInputDetector::class, StaticInputDetector::class);
+}
+
+if (! class_exists(InvalidSetReporter::class)) {
+    class_alias(\Symplify\SetConfigResolver\Bootstrap\ValueObject\InvalidSetReporter::class, InvalidSetReporter::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
