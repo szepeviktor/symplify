@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 // decoupled in own "*.php" file, so ECS, Rector and PHPStan works out of the box here
 
-if (! class_exists(\Symplify\PackageBuilder\Console\ShellCode::class)) {
-    class_alias(\Symplify\PackageBuilder\Console\ShellCode::class, \Symplify\PackageBuilder\Console\ValueObject\ShellCode::class);
-}
-
-if (! class_exists(\Symplify\SetConfigResolver\SetAwareConfigResolver::class)) {
-    class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, \Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver::class);
-}
-
 use PHP_CodeSniffer\Util\Tokens;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symplify\EasyCodingStandard\Bootstrap\ConfigHasher;
@@ -38,6 +30,14 @@ $autoloadIncluder->includeCwdVendorAutoloadIfExists();
 $autoloadIncluder->autoloadProjectAutoloaderFile('/../../autoload.php');
 $autoloadIncluder->includeDependencyOrRepositoryVendorAutoloadIfExists();
 $autoloadIncluder->includePhpCodeSnifferAutoloadIfNotInPharAndInitliazeTokens();
+
+if (! class_exists(\Symplify\PackageBuilder\Console\ShellCode::class)) {
+    class_alias(\Symplify\PackageBuilder\Console\ShellCode::class, \Symplify\PackageBuilder\Console\ValueObject\ShellCode::class);
+}
+
+if (! class_exists(\Symplify\SetConfigResolver\SetAwareConfigResolver::class)) {
+    class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, \Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver::class);
+}
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
 $symfonyStyle = $symfonyStyleFactory->create();
