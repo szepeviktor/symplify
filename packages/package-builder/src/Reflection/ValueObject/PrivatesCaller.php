@@ -6,7 +6,7 @@ namespace Symplify\PackageBuilder\Reflection\ValueObject;
 use ReflectionClass;
 use ReflectionMethod;
 /**
- * @see \Symplify\PackageBuilder\Tests\Reflection\PrivatesCallerTest
+ * @see \Symplify\PackageBuilder\Tests\Reflection\ValueObject\PrivatesCallerTest
  */
 final class PrivatesCaller
 {

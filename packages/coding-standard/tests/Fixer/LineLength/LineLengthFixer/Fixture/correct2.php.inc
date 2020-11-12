@@ -7,7 +7,7 @@ namespace Symplify\BetterPhpDocParser;
 use phpDocumentor\Reflection\DocBlock;
 use phpDocumentor\Reflection\DocBlock\Serializer;
 use Symplify\BetterPhpDocParser\Renderer\OriginalSpacingCompleter;
-use Symplify\PackageBuilder\Reflection\PrivatesCaller;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller;
 
 final class FixedSerializer extends Serializer
 {

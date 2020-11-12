@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Symplify\PackageBuilder\Tests\Reflection;
+namespace Symplify\PackageBuilder\Tests\Reflection\ValueObject;
 
 use PHPUnit\Framework\TestCase;
 use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller;
