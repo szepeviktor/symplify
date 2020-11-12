@@ -19,14 +19,10 @@ use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter;
 use Symplify\SetConfigResolver\Exception\SetNotFoundException;
-use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
+use Symplify\SetConfigResolver\SetAwareConfigResolver;
 
 if (! class_exists(ShellCode::class)) {
     class_alias('Symplify\PackageBuilder\Console\ShellCode', ShellCode::class);
-}
-
-if (! class_exists(SetAwareConfigResolver::class)) {
-    class_alias('Symplify\SetConfigResolver\SetAwareConfigResolver', SetAwareConfigResolver::class);
 }
 
 
