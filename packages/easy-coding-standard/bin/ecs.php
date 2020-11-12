@@ -13,7 +13,7 @@ use Symplify\EasyCodingStandard\Configuration\Configuration;
 use Symplify\EasyCodingStandard\Console\EasyCodingStandardConsoleApplication;
 use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
 use Symplify\EasyCodingStandard\Set\ConstantReflectionSetFactory;
-use Symplify\EasyCodingStandard\Set\EasyCodingStandardSetProvider;
+use Symplify\EasyCodingStandard\Set\ValueObject\EasyCodingStandardSetProvider;
 use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
@@ -37,6 +37,10 @@ if (! class_exists(ShellCode::class)) {
 
 if (! class_exists(SetAwareConfigResolver::class)) {
     class_alias(\Symplify\SetConfigResolver\SetAwareConfigResolver::class, SetAwareConfigResolver::class);
+}
+
+if (! class_exists(EasyCodingStandardSetProvider::class)) {
+    class_alias(\Symplify\EasyCodingStandard\Set\EasyCodingStandardSetProvider::class, EasyCodingStandardSetProvider::class);
 }
 
 $symfonyStyleFactory = new SymfonyStyleFactory();
