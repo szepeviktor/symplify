@@ -227,7 +227,7 @@ parameters:
         -
            message: '#Use explicit return value over magic &reference#'
            paths:
-               - packages/package-builder/src/Reflection/PrivatesCaller.php # 40
+               - packages/package-builder/src/Reflection/ValueObject/PrivatesCaller.php # 40
 
         -
             message: '#Use another value object over string with value object arrays#'
@@ -266,7 +266,7 @@ parameters:
                 - packages/easy-hydrator/src/ArrayToValueObjectHydrator.php # 40
                 - packages/easy-hydrator/src/TypeCaster/ObjectTypeCaster.php # 78
                 - packages/easy-hydrator/tests/ArrayToValueObjectHydratorTest.php # 141
-                - packages/package-builder/src/Reflection/PrivatesCaller.php # 19
+                - packages/package-builder/src/Reflection/ValueObject/PrivatesCaller.php # 19
 
         -
             message: '#Do not use factory/method call in constructor\. Put factory in config and get service with dependency injection#'

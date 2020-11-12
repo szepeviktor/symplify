@@ -62,7 +62,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ParameterTypeHintSniff::class . '.MissingNativeTypeHint' => [
             '*Sniff.php',
             '*YamlFileLoader.php',
-            __DIR__ . '/packages/package-builder/src/Reflection/PrivatesCaller.php',
+            __DIR__ . '/packages/package-builder/src/Reflection/ValueObject/PrivatesCaller.php',
         ],
     ]);
 };
