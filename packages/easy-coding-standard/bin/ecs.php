@@ -15,16 +15,19 @@ use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
 use Symplify\EasyCodingStandard\Set\ConstantReflectionSetFactory;
 use Symplify\EasyCodingStandard\Set\EasyCodingStandardSetProvider;
 use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
-use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter;
 use Symplify\SetConfigResolver\Exception\SetNotFoundException;
-use Symplify\SetConfigResolver\SetAwareConfigResolver;
+use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
 if (! class_exists(ShellCode::class)) {
     class_alias('Symplify\PackageBuilder\Console\ShellCode', ShellCode::class);
 }
 
+if (! class_exists(SetAwareConfigResolver::class)) {
+    class_alias('Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver', SetAwareConfigResolver::class);
+}
 
 // performance boost
 gc_disable();
