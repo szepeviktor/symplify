@@ -21,6 +21,15 @@ use Symplify\SetConfigResolver\Bootstrap\InvalidSetReporter;
 use Symplify\SetConfigResolver\Exception\SetNotFoundException;
 use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 
+if (! class_exists(ShellCode::class)) {
+    class_alias(ShellCode::class, 'Symplify\PackageBuilder\Console\ShellCode');
+}
+
+if (! class_exists(SetAwareConfigResolver::class)) {
+    class_alias(SetAwareConfigResolver::class, 'Symplify\SetConfigResolver\SetAwareConfigResolver');
+}
+
+
 // performance boost
 gc_disable();
 
