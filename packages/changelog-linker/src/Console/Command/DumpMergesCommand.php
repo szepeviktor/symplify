@@ -8,14 +8,14 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\ChangelogLinker\Application\ChangelogLinkerApplication;
-use Symplify\ChangelogLinker\Configuration\HighestMergedIdResolver;
-use Symplify\ChangelogLinker\Configuration\Option;
-use Symplify\ChangelogLinker\Console\Input\PriorityResolver;
+use Symplify\ChangelogLinker\Configuration\ValueObject\HighestMergedIdResolver;
+use Symplify\ChangelogLinker\Configuration\ValueObject\Option;
+use Symplify\ChangelogLinker\Console\Input\ValueObject\PriorityResolver;
 use Symplify\ChangelogLinker\FileSystem\ChangelogFileSystem;
-use Symplify\ChangelogLinker\FileSystem\ChangelogPlaceholderGuard;
-use Symplify\ChangelogLinker\Github\GithubApi;
+use Symplify\ChangelogLinker\FileSystem\ValueObject\ChangelogPlaceholderGuard;
+use Symplify\ChangelogLinker\Github\ValueObject\GithubApi;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 /**
  * @inspired by https://github.com/weierophinney/changelog_generator
@@ -29,7 +29,7 @@ final class DumpMergesCommand extends AbstractSymplifyCommand
     private const CHANGELOG_PLACEHOLDER_TO_WRITE = '<!-- changelog-linker -->';
 
     /**
-     * @var GithubApi
+     * @var \Symplify\ChangelogLinker\Github\ValueObject\GithubApi
      */
     private $githubApi;
 
@@ -39,12 +39,12 @@ final class DumpMergesCommand extends AbstractSymplifyCommand
     private $changelogFileSystem;
 
     /**
-     * @var PriorityResolver
+     * @var \Symplify\ChangelogLinker\Console\Input\ValueObject\PriorityResolver
      */
     private $priorityResolver;
 
     /**
-     * @var ChangelogPlaceholderGuard
+     * @var \Symplify\ChangelogLinker\FileSystem\ValueObject\ChangelogPlaceholderGuard
      */
     private $changelogPlaceholderGuard;
 
@@ -54,7 +54,7 @@ final class DumpMergesCommand extends AbstractSymplifyCommand
     private $changelogLinkerApplication;
 
     /**
-     * @var HighestMergedIdResolver
+     * @var \Symplify\ChangelogLinker\Configuration\ValueObject\HighestMergedIdResolver
      */
     private $highestMergedIdResolver;
 

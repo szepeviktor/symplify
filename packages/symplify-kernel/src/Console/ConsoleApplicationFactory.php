@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Symplify\SymplifyKernel\Console;
 
+use Symplify\SymplifyKernel\Console\ValueObject\AutowiredConsoleApplication;
 use Jean85\PrettyVersions;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\Command;
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
-use Symplify\SmartFileSystem\SmartFileSystem;
-use Symplify\SymplifyKernel\Strings\StringsConverter;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
+use Symplify\SymplifyKernel\Strings\ValueObject\StringsConverter;
 use Throwable;
 
 final class ConsoleApplicationFactory
@@ -21,12 +22,12 @@ final class ConsoleApplicationFactory
     private $commands = [];
 
     /**
-     * @var StringsConverter
+     * @var \Symplify\SymplifyKernel\Strings\ValueObject\StringsConverter
      */
     private $stringsConverter;
 
     /**
-     * @var ParameterProvider
+     * @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider
      */
     private $parameterProvider;
 
@@ -36,7 +37,7 @@ final class ConsoleApplicationFactory
     private $composerJsonFactory;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

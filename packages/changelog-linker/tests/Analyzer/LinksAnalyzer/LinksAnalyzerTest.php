@@ -6,7 +6,7 @@ namespace Symplify\ChangelogLinker\Tests\Analyzer\LinksAnalyzer;
 
 use PHPUnit\Framework\TestCase;
 use Symplify\ChangelogLinker\Analyzer\LinksAnalyzer;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class LinksAnalyzerTest extends TestCase
 {
@@ -16,7 +16,7 @@ final class LinksAnalyzerTest extends TestCase
     private $linksAnalyzer;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

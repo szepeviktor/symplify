@@ -6,12 +6,12 @@ namespace Symplify\SymplifyKernel\ValueObject;
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\HttpKernel\KernelInterface;
-use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\Input\ValueObject\StaticInputDetector;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\PackageBuilder\Contract\HttpKernel\ExtraConfigAwareKernelInterface;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\BootException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\BootException;
 use Throwable;
 
 final class KernelBootAndApplicationRun
@@ -22,13 +22,13 @@ final class KernelBootAndApplicationRun
     private $kernelClass;
 
     /**
-     * @var string[]|SmartFileInfo[]
+     * @var string[]|\Symplify\SmartFileSystem\ValueObject\SmartFileInfo[]
      */
     private $extraConfigs = [];
 
     /**
      * @param class-string $kernelClass
-     * @param string[]|SmartFileInfo[] $extraConfigs
+     * @param string[]|\Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $extraConfigs
      */
     public function __construct(string $kernelClass, array $extraConfigs = [])
     {

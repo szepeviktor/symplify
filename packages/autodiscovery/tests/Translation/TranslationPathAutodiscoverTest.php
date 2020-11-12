@@ -6,7 +6,7 @@ namespace Symplify\Autodiscovery\Tests\Translation;
 
 use Symfony\Component\Translation\Translator;
 use Symplify\Autodiscovery\Tests\Source\HttpKernel\AudiscoveryTestingKernel;
-use Symplify\Autodiscovery\Translation\TranslationPathAutodiscoverer;
+use Symplify\Autodiscovery\Translation\ValueObject\TranslationPathAutodiscoverer;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 /**

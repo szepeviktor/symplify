@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoTraitExceptRequiredAutowireRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoTraitExceptRequiredAutowireRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoTraitExceptRequiredAutowireRule;
 
 final class NoTraitExceptRequiredAutowireRuleTest extends AbstractServiceAwareRuleTestCase
 {

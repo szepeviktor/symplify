@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\SeeAnnotationToTestRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\SeeAnnotationToTestRule;
+use Symplify\PHPStanRules\Rules\ValueObject\SeeAnnotationToTestRule;
 use Symplify\PHPStanRules\Tests\Rules\SeeAnnotationToTestRule\Fixture\RuleWithoutSee;
 use Symplify\PHPStanRules\Tests\Rules\SeeAnnotationToTestRule\Fixture\RuleWithSeeRandom;
 

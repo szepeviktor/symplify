@@ -8,17 +8,17 @@ use Migrify\PhpConfigPrinter\HttpKernel\PhpConfigPrinterKernel;
 use Migrify\PhpConfigPrinter\YamlToPhpConverter;
 use Nette\Utils\Json;
 use Nette\Utils\Strings;
-use Symplify\EasyCodingStandard\Configuration\Exception\NoCheckersLoadedException;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\NoCheckersLoadedException;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffResultFactory;
 use Symplify\EasyCodingStandard\FixerRunner\Application\FixerFileProcessor;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
 use Symplify\EasyCodingStandard\SniffRunner\Application\SniffFileProcessor;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\FileSystemGuard;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 abstract class AbstractCheckerTestCase extends AbstractKernelTestCase
 {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\AutowireArrayParameter\Tests\DependencyInjection\CompilerPass;
 
-use Symplify\AutowireArrayParameter\Tests\HttpKernel\AutowireArrayParameterHttpKernel;
+use Symplify\AutowireArrayParameter\Tests\HttpKernel\ValueObject\AutowireArrayParameterHttpKernel;
 use Symplify\AutowireArrayParameter\Tests\Source\SomeCollector;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 

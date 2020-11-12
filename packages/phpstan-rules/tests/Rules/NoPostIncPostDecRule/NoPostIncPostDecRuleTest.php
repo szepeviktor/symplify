@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoPostIncPostDecRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoPostIncPostDecRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoPostIncPostDecRule;
 
 final class NoPostIncPostDecRuleTest extends AbstractServiceAwareRuleTestCase
 {

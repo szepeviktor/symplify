@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\RequireDataProviderTestMethodRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\RequireDataProviderTestMethodRule;
+use Symplify\PHPStanRules\Rules\ValueObject\RequireDataProviderTestMethodRule;
 
 final class RequireDataProviderTestMethodRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -1,8 +1,8 @@
 services:
-    - Symplify\PHPStanRules\Naming\SimpleNameResolver
+    - Symplify\PHPStanRules\Naming\ValueObject\SimpleNameResolver
 
     -
-        class: Symplify\PHPStanRules\Rules\PreferredStaticCallOverFuncCallRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\PreferredStaticCallOverFuncCallRule
         tags: [phpstan.rules.rule]
         arguments:
             funcCallToPreferredStaticCalls:

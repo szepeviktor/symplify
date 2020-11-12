@@ -6,32 +6,32 @@ namespace Symplify\MonorepoBuilder\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\FileSystem\ComposerJsonProvider;
-use Symplify\MonorepoBuilder\Validator\ConflictingPackageVersionsReporter;
-use Symplify\MonorepoBuilder\Validator\SourcesPresenceValidator;
-use Symplify\MonorepoBuilder\VersionValidator;
+use Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider;
+use Symplify\MonorepoBuilder\ValueObject\ConflictingPackageVersionsReporter;
+use Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator;
+use Symplify\MonorepoBuilder\ValueObject\VersionValidator;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class ValidateCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var VersionValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\VersionValidator
      */
     private $versionValidator;
 
     /**
-     * @var ComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider
      */
     private $composerJsonProvider;
 
     /**
-     * @var ConflictingPackageVersionsReporter
+     * @var \Symplify\MonorepoBuilder\ValueObject\ConflictingPackageVersionsReporter
      */
     private $conflictingPackageVersionsReporter;
 
     /**
-     * @var SourcesPresenceValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator
      */
     private $sourcesPresenceValidator;
 

@@ -6,11 +6,11 @@ namespace Symplify\ChangelogLinker\Tests\ChangelogCleaner;
 
 use Iterator;
 use Symplify\ChangelogLinker\ChangelogCleaner;
-use Symplify\ChangelogLinker\HttpKernel\ChangelogLinkerKernel;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
+use Symplify\ChangelogLinker\HttpKernel\ValueObject\ChangelogLinkerKernel;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ChangelogCleanerTest extends AbstractKernelTestCase
 {

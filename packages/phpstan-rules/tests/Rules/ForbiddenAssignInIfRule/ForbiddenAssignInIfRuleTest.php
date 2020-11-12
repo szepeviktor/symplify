@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenAssignInIfRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenAssignInIfRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenAssignInIfRule;
 
 final class ForbiddenAssignInIfRuleTest extends AbstractServiceAwareRuleTestCase
 {

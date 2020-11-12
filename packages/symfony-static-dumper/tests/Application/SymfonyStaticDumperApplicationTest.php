@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Symplify\SymfonyStaticDumper\Tests\Application;
 
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileSystem;
-use Symplify\SymfonyStaticDumper\Application\SymfonyStaticDumperApplication;
-use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\TestSymfonyStaticDumperKernel;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
+use Symplify\SymfonyStaticDumper\Application\ValueObject\SymfonyStaticDumperApplication;
+use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\ValueObject\TestSymfonyStaticDumperKernel;
 
 final class SymfonyStaticDumperApplicationTest extends AbstractKernelTestCase
 {
@@ -22,12 +22,12 @@ final class SymfonyStaticDumperApplicationTest extends AbstractKernelTestCase
     private const OUTPUT_DIRECTORY = __DIR__ . '/../temp/output';
 
     /**
-     * @var SymfonyStaticDumperApplication
+     * @var \Symplify\SymfonyStaticDumper\Application\ValueObject\SymfonyStaticDumperApplication
      */
     private $symfonyStaticDumperApplication;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

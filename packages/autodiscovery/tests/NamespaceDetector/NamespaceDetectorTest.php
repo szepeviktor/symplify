@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Symplify\Autodiscovery\Tests\NamespaceDetector;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\Autodiscovery\NamespaceDetector;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\Autodiscovery\ValueObject\NamespaceDetector;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class NamespaceDetectorTest extends TestCase
 {

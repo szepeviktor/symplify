@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\TooManyProperties
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\TooManyPropertiesRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\TooManyPropertiesRule;
 
 final class TooManyPropertiesRuleTest extends AbstractServiceAwareRuleTestCase
 {

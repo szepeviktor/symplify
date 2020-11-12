@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenPrivateMethodByTypeRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenPrivateMethodByTypeRule
         tags: [phpstan.rules.rule]
         arguments:
             forbiddenTypes:

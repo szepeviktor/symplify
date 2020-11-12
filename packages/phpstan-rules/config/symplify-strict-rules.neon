@@ -1,8 +1,8 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\NoDefaultParameterValueRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoDefaultParameterValueRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoNullableParameterRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoNullableParameterRule
         tags: [phpstan.rules.rule]

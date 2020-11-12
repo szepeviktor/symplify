@@ -8,7 +8,7 @@ use Doctrine\ORM\EntityManager;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ExclusiveDependencyRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ExclusiveDependencyRule;
 
 final class ExclusiveDependencyRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -7,10 +7,10 @@ namespace Symplify\EasyCodingStandard\SnippetFormatter\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symplify\EasyCodingStandard\Console\Command\AbstractCheckCommand;
 use Symplify\EasyCodingStandard\SnippetFormatter\Formatter\SnippetFormatter;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\SmartFileSystem\Finder\SmartFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\SmartFileSystem\Finder\ValueObject\SmartFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 abstract class AbstractSnippetFormatterCommand extends AbstractCheckCommand
 {
@@ -20,12 +20,12 @@ abstract class AbstractSnippetFormatterCommand extends AbstractCheckCommand
     private $snippetFormatter;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 
     /**
-     * @var SmartFinder
+     * @var \Symplify\SmartFileSystem\Finder\ValueObject\SmartFinder
      */
     private $smartFinder;
 

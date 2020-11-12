@@ -1,10 +1,10 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\RequireStringArgumentInMethodCallRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\RequireStringArgumentInMethodCallRule
         tags: [phpstan.rules.rule]
         arguments:
             stringArgByMethodByType:
                 Symplify\PHPStanRules\Tests\Rules\RequireStringArgumentInMethodCallRule\Source\AlwaysCallMeWithString:
                     callMe: [1]
 
-    - Symplify\PHPStanRules\Naming\SimpleNameResolver
+    - Symplify\PHPStanRules\Naming\ValueObject\SimpleNameResolver

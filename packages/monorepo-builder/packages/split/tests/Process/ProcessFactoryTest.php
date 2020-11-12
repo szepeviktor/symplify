@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Split\Tests\Process;
 
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
 use Symplify\MonorepoBuilder\Split\Process\ProcessFactory;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 

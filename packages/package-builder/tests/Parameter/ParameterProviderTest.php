@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Symplify\PackageBuilder\Tests\Parameter;
 
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\PackageBuilder\Tests\HttpKernel\PackageBuilderTestKernel;
+use Symplify\PackageBuilder\Tests\HttpKernel\ValueObject\PackageBuilderTestKernel;
 
 final class ParameterProviderTest extends AbstractKernelTestCase
 {

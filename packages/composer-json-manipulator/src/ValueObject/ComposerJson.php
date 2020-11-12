@@ -6,9 +6,9 @@ namespace Symplify\ComposerJsonManipulator\ValueObject;
 
 use Nette\Utils\Arrays;
 use Nette\Utils\Strings;
-use Symplify\ComposerJsonManipulator\Sorter\ComposerPackageSorter;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\ComposerJsonManipulator\Sorter\ValueObject\ComposerPackageSorter;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
 
 final class ComposerJson
 {
@@ -93,12 +93,12 @@ final class ComposerJson
     private $config = [];
 
     /**
-     * @var SmartFileInfo|null
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo|null
      */
     private $fileInfo;
 
     /**
-     * @var ComposerPackageSorter
+     * @var \Symplify\ComposerJsonManipulator\Sorter\ValueObject\ComposerPackageSorter
      */
     private $composerPackageSorter;
 

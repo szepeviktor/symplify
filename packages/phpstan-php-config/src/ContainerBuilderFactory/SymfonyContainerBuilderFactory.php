@@ -7,8 +7,8 @@ namespace Symplify\PHPStanPHPConfig\ContainerBuilderFactory;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symplify\PHPStanPHPConfig\Config\LoaderFactory\ImportLessPhpFileLoaderFactory;
-use Symplify\PHPStanPHPConfig\DependencyInjection\MakeServicesPublicCompilerPass;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\PHPStanPHPConfig\DependencyInjection\ValueObject\MakeServicesPublicCompilerPass;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class SymfonyContainerBuilderFactory
 {

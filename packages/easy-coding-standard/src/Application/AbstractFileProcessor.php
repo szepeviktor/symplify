@@ -6,7 +6,7 @@ namespace Symplify\EasyCodingStandard\Application;
 
 use Symplify\EasyCodingStandard\Contract\Application\FileProcessorInterface;
 use Symplify\EasyCodingStandard\SnippetFormatter\Provider\CurrentParentFileInfoProvider;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 abstract class AbstractFileProcessor implements FileProcessorInterface
 {

@@ -6,7 +6,7 @@ namespace Symplify\CodingStandard\Tests\Issues;
 
 use Iterator;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class InlineArrayTest extends AbstractCheckerTestCase
 {

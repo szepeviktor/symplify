@@ -6,12 +6,12 @@ namespace Symplify\ConsoleColorDiff\Tests\Console\Formatter;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\ConsoleColorDiff\Console\Formatter\ColorConsoleDiffFormatter;
+use Symplify\ConsoleColorDiff\Console\Formatter\ValueObject\ColorConsoleDiffFormatter;
 
 final class ColorConsoleDiffFormatterTest extends TestCase
 {
     /**
-     * @var ColorConsoleDiffFormatter
+     * @var \Symplify\ConsoleColorDiff\Console\Formatter\ValueObject\ColorConsoleDiffFormatter
      */
     private $colorConsoleDiffFormatter;
 

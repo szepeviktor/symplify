@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\Tests\Fixer\Spacing\SpaceAfterCommaHereNowDocFixer;
 
 use Iterator;
-use Symplify\CodingStandard\Fixer\Spacing\SpaceAfterCommaHereNowDocFixer;
+use Symplify\CodingStandard\Fixer\Spacing\ValueObject\SpaceAfterCommaHereNowDocFixer;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @requires PHP >= 7.3

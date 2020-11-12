@@ -8,9 +8,9 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\PackageScoper\ValueObject\Option;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class GeneratePhpScoperCommand extends AbstractSymplifyCommand
 {

@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace Symplify\RuleDocGenerator\Tests\DirectoryToMarkdownPrinter;
 
 use Iterator;
-use Symplify\EasyTesting\DataProvider\StaticFixtureUpdater;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureUpdater;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\RuleDocGenerator\DirectoryToMarkdownPrinter;
-use Symplify\RuleDocGenerator\HttpKernel\RuleDocGeneratorKernel;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\RuleDocGenerator\ValueObject\DirectoryToMarkdownPrinter;
+use Symplify\RuleDocGenerator\HttpKernel\ValueObject\RuleDocGeneratorKernel;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class DirectoryToMarkdownPrinterTest extends AbstractKernelTestCase
 {
     /**
-     * @var DirectoryToMarkdownPrinter
+     * @var \Symplify\RuleDocGenerator\ValueObject\DirectoryToMarkdownPrinter
      */
     private $directoryToMarkdownPrinter;
 

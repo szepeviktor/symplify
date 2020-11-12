@@ -6,8 +6,8 @@ namespace Symplify\EasyTesting\PHPUnit\Behavior;
 
 use Symfony\Component\Finder\Finder;
 use Symplify\EasyTesting\ValueObject\ExpectedAndOutputFileInfoPair;
-use Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * Use only in "\PHPUnit\Framework\TestCase"
@@ -47,7 +47,7 @@ trait DirectoryAssertableTrait
     }
 
     /**
-     * @return SmartFileInfo[]
+     * @return \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[]
      */
     private function findFileInfosInDirectory(string $directory): array
     {
@@ -60,8 +60,8 @@ trait DirectoryAssertableTrait
     }
 
     /**
-     * @param SmartFileInfo[] $expectedFileInfos
-     * @param SmartFileInfo[] $outputFileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $expectedFileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $outputFileInfos
      * @return array<string, ExpectedAndOutputFileInfoPair>
      */
     private function groupFileInfosByRelativeFilePath(
@@ -92,7 +92,7 @@ trait DirectoryAssertableTrait
     }
 
     /**
-     * @param SmartFileInfo[] $fileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $fileInfos
      */
     private function resolveFileInfoByRelativeFilePath(
         array $fileInfos,

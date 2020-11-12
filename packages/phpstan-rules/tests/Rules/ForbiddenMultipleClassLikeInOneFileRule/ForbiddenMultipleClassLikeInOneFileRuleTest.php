@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenMultipleClassLikeInOneFileR
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenMultipleClassLikeInOneFileRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenMultipleClassLikeInOneFileRule;
 
 final class ForbiddenMultipleClassLikeInOneFileRuleTest extends AbstractServiceAwareRuleTestCase
 {

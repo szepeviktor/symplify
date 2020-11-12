@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\Tests\ChangeTree;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\ChangeTree\ChangeSorter;
+use Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeSorter;
 use Symplify\ChangelogLinker\ValueObject\ChangeTree\Change;
 
 final class ChangeSorterTest extends TestCase
 {
     /**
-     * @var ChangeSorter
+     * @var \Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeSorter
      */
     private $changeSorter;
 

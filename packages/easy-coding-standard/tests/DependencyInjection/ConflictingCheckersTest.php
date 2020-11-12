@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Tests\DependencyInjection;
 
-use Symplify\EasyCodingStandard\Configuration\Exception\ConflictingCheckersLoadedException;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\ConflictingCheckersLoadedException;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class ConflictingCheckersTest extends AbstractKernelTestCase

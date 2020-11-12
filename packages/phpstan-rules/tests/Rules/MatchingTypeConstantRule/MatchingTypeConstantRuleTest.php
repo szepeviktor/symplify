@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\MatchingTypeConstantRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\MatchingTypeConstantRule;
+use Symplify\PHPStanRules\Rules\ValueObject\MatchingTypeConstantRule;
 
 final class MatchingTypeConstantRuleTest extends AbstractServiceAwareRuleTestCase
 {

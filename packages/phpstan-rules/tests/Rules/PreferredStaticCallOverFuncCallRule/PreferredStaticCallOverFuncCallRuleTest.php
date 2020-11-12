@@ -8,7 +8,7 @@ use Iterator;
 use Nette\Utils\Strings;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\PreferredStaticCallOverFuncCallRule;
+use Symplify\PHPStanRules\Rules\ValueObject\PreferredStaticCallOverFuncCallRule;
 
 final class PreferredStaticCallOverFuncCallRuleTest extends AbstractServiceAwareRuleTestCase
 {

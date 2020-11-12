@@ -1,12 +1,12 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\NoPostIncPostDecRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoPostIncPostDecRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoFuncCallInMethodCallRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoFuncCallInMethodCallRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoDynamicNameRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoDynamicNameRule
         tags: [phpstan.rules.rule]

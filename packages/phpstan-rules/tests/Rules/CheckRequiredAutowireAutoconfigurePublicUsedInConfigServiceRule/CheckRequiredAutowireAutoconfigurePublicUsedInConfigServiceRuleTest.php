@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckRequiredAutowireAutoconfigurePu
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckRequiredAutowireAutoconfigurePublicUsedInConfigServiceRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckRequiredAutowireAutoconfigurePublicUsedInConfigServiceRule;
 
 final class CheckRequiredAutowireAutoconfigurePublicUsedInConfigServiceRuleTest extends AbstractServiceAwareRuleTestCase
 {

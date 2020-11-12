@@ -7,13 +7,13 @@ namespace Symplify\EasyCodingStandard\Error;
 use Nette\Utils\Strings;
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PhpCsFixer\Fixer\FixerInterface;
-use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
-use Symplify\EasyCodingStandard\Exception\NotSniffNorFixerException;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector;
+use Symplify\EasyCodingStandard\ValueObject\NotSniffNorFixerException;
 use Symplify\EasyCodingStandard\SnippetFormatter\Provider\CurrentParentFileInfoProvider;
 use Symplify\EasyCodingStandard\ValueObject\Error\CodingStandardError;
 use Symplify\EasyCodingStandard\ValueObject\Error\FileDiff;
 use Symplify\EasyCodingStandard\ValueObject\Error\SystemError;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ErrorAndDiffCollector
 {
@@ -33,7 +33,7 @@ final class ErrorAndDiffCollector
     private $fileDiffs = [];
 
     /**
-     * @var ChangedFilesDetector
+     * @var \Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector
      */
     private $changedFilesDetector;
 

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\PackageBuilder\Reflection\ClassLikeExistenceChecker;
+use Symplify\PackageBuilder\Reflection\ValueObject\ClassLikeExistenceChecker;
 use Symplify\Skipper\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {

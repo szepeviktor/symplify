@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Split\Tests\Configuration;
 
 use Iterator;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Split\Configuration\RepositoryGuard;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Split\Configuration\ValueObject\RepositoryGuard;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class RepositoryGuardTest extends AbstractKernelTestCase
 {
     /**
-     * @var RepositoryGuard
+     * @var \Symplify\MonorepoBuilder\Split\Configuration\ValueObject\RepositoryGuard
      */
     private $repositoryGuard;
 

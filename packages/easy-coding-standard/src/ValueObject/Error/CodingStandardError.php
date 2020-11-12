@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\ValueObject\Error;
 
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class CodingStandardError
 {
@@ -24,7 +24,7 @@ final class CodingStandardError
     private $checkerClass;
 
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $fileInfo;
 

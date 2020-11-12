@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoStaticPropertyRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoStaticPropertyRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoStaticPropertyRule;
 
 final class NoStaticPropertyRuleTest extends AbstractServiceAwareRuleTestCase
 {

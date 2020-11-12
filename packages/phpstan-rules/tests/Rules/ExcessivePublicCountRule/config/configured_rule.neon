@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\ExcessivePublicCountRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ExcessivePublicCountRule
         tags: [phpstan.rules.rule]
         arguments:
             maxPublicClassElementCount: 5

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenArrayWithStringKeysRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenArrayWithStringKeysRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenArrayWithStringKeysRule;
 
 final class ForbiddenArrayWithStringKeysRuleTest extends AbstractServiceAwareRuleTestCase
 {

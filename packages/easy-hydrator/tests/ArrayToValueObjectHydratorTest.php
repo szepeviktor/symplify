@@ -6,7 +6,7 @@ namespace Symplify\EasyHydrator\Tests;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Symplify\EasyHydrator\ArrayToValueObjectHydrator;
+use Symplify\EasyHydrator\ValueObject\ArrayToValueObjectHydrator;
 use Symplify\EasyHydrator\Tests\Fixture\Arrays;
 use Symplify\EasyHydrator\Tests\Fixture\ImmutableTimeEvent;
 use Symplify\EasyHydrator\Tests\Fixture\Marriage;
@@ -14,7 +14,7 @@ use Symplify\EasyHydrator\Tests\Fixture\Person;
 use Symplify\EasyHydrator\Tests\Fixture\PersonsCollection;
 use Symplify\EasyHydrator\Tests\Fixture\PersonWithAge;
 use Symplify\EasyHydrator\Tests\Fixture\TimeEvent;
-use Symplify\EasyHydrator\Tests\HttpKernel\EasyHydratorTestKernel;
+use Symplify\EasyHydrator\Tests\HttpKernel\ValueObject\EasyHydratorTestKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class ArrayToValueObjectHydratorTest extends AbstractKernelTestCase
@@ -32,7 +32,7 @@ final class ArrayToValueObjectHydratorTest extends AbstractKernelTestCase
     ];
 
     /**
-     * @var ArrayToValueObjectHydrator
+     * @var \Symplify\EasyHydrator\ValueObject\ArrayToValueObjectHydrator
      */
     private $arrayToValueObjectHydrator;
 

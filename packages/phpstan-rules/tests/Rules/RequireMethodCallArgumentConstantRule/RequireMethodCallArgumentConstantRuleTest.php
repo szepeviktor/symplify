@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\RequireMethodCallArgumentConstantRul
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\RequireMethodCallArgumentConstantRule;
+use Symplify\PHPStanRules\Rules\ValueObject\RequireMethodCallArgumentConstantRule;
 
 final class RequireMethodCallArgumentConstantRuleTest extends AbstractServiceAwareRuleTestCase
 {

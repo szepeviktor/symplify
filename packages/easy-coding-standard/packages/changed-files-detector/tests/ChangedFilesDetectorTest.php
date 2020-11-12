@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\ChangedFilesDetector\Tests;
 
-use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ChangedFilesDetectorTest extends AbstractKernelTestCase
 {
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $smartFileInfo;
 
     /**
-     * @var ChangedFilesDetector
+     * @var \Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector
      */
     private $changedFilesDetector;
 

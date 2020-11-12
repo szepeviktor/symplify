@@ -5,21 +5,21 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Tests\VersionValidator;
 
 use Symfony\Component\Finder\Finder;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\VersionValidator;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\ValueObject\VersionValidator;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class VersionValidatorTest extends AbstractKernelTestCase
 {
     /**
-     * @var VersionValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\VersionValidator
      */
     private $versionValidator;
 
     /**
-     * @var FinderSanitizer
+     * @var \Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer
      */
     private $finderSanitizer;
 

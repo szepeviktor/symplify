@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Symplify\ComposerJsonManipulator;
 
-use Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
+use Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJsonSection;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\ComposerJsonManipulator\Tests\ComposerJsonFactory\ComposerJsonFactoryTest
@@ -15,7 +15,7 @@ use Symplify\SmartFileSystem\SmartFileInfo;
 final class ComposerJsonFactory
 {
     /**
-     * @var JsonFileManager
+     * @var \Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager
      */
     private $jsonFileManager;
 

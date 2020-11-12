@@ -7,12 +7,12 @@ namespace Symplify\EasyCodingStandard\Console\Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\EasyCodingStandard\Console\Reporter\CheckerListReporter;
-use Symplify\EasyCodingStandard\Console\Reporter\SetsReporter;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\Console\Reporter\ValueObject\CheckerListReporter;
+use Symplify\EasyCodingStandard\Console\Reporter\ValueObject\SetsReporter;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symplify\EasyCodingStandard\FixerRunner\Application\FixerFileProcessor;
 use Symplify\EasyCodingStandard\SniffRunner\Application\SniffFileProcessor;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class ShowCommand extends Command
 {
@@ -27,17 +27,17 @@ final class ShowCommand extends Command
     private $fixerFileProcessor;
 
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     private $easyCodingStandardStyle;
 
     /**
-     * @var CheckerListReporter
+     * @var \Symplify\EasyCodingStandard\Console\Reporter\ValueObject\CheckerListReporter
      */
     private $checkerListReporter;
 
     /**
-     * @var SetsReporter
+     * @var \Symplify\EasyCodingStandard\Console\Reporter\ValueObject\SetsReporter
      */
     private $setsReporter;
 

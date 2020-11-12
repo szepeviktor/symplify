@@ -1,4 +1,4 @@
 services:
     -
-        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\NoChainMethodCallRule
+        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\NoChainMethodCallRule
         tags: [phpstan.rules.rule]

@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace Symplify\SymfonyStaticDumper\Tests\Routing;
 
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SymfonyStaticDumper\Routing\RoutesProvider;
-use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\TestSymfonyStaticDumperKernel;
+use Symplify\SymfonyStaticDumper\Routing\ValueObject\RoutesProvider;
+use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\ValueObject\TestSymfonyStaticDumperKernel;
 
 final class RoutesProviderTest extends AbstractKernelTestCase
 {
     /**
-     * @var RoutesProvider
+     * @var \Symplify\SymfonyStaticDumper\Routing\ValueObject\RoutesProvider
      */
     private $routesProvider;
 

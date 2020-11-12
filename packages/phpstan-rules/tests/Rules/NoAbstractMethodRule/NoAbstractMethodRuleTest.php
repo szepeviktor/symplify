@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoAbstractMethodRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoAbstractMethodRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoAbstractMethodRule;
 
 final class NoAbstractMethodRuleTest extends AbstractServiceAwareRuleTestCase
 {

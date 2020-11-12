@@ -5,23 +5,23 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Split\Tests\FileSystem\DirectoryToRepositoryProvider;
 
 use Iterator;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Split\FileSystem\DirectoryToRepositoryProvider;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Split\FileSystem\ValueObject\DirectoryToRepositoryProvider;
 use Symplify\MonorepoBuilder\Split\ValueObject\ConvertFormat;
 use Symplify\MonorepoBuilder\ValueObject\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class DirectoryToRepositoryProviderTest extends AbstractKernelTestCase
 {
     /**
-     * @var DirectoryToRepositoryProvider
+     * @var \Symplify\MonorepoBuilder\Split\FileSystem\ValueObject\DirectoryToRepositoryProvider
      */
     private $directoryToRepositoryProvider;
 
     /**
-     * @var ParameterProvider
+     * @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider
      */
     private $parameterProvider;
 

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenNewInMethodRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenNewInMethodRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenNewInMethodRule;
 use Symplify\PHPStanRules\Tests\Rules\ForbiddenNewInMethodRule\Fixture\DefinedInterfaceAndParentClass;
 use Symplify\PHPStanRules\Tests\Rules\ForbiddenNewInMethodRule\Fixture\HasNewInMethod;
 

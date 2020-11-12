@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\ValueObject;
 
 use Nette\Utils\Strings;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class Package
 {
@@ -15,7 +15,7 @@ final class Package
     private $name;
 
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $rootDirectoryFileInfo;
 

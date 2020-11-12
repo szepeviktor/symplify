@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckUsedNamespacedNameOnClassNodeRu
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckUsedNamespacedNameOnClassNodeRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckUsedNamespacedNameOnClassNodeRule;
 
 final class CheckUsedNamespacedNameOnClassNodeRuleTest extends AbstractServiceAwareRuleTestCase
 {

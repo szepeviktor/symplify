@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\Skipper\ValueObjectFactory;
 
 use Nette\Utils\Strings;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 use Symplify\Skipper\ValueObject\Option;
 use Symplify\Skipper\ValueObject\SkipRules;
 
@@ -27,7 +27,7 @@ final class SkipRulesFactory
     private $skippedMessages = [];
 
     /**
-     * @var ParameterProvider
+     * @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider
      */
     private $parameterProvider;
 

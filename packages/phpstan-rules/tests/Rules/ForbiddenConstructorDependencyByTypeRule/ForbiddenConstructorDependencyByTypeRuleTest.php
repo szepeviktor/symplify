@@ -8,7 +8,7 @@ use Iterator;
 use PHPStan\Rules\Rule;
 use Psr\Container\ContainerInterface;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenConstructorDependencyByTypeRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenConstructorDependencyByTypeRule;
 
 final class ForbiddenConstructorDependencyByTypeRuleTest extends AbstractServiceAwareRuleTestCase
 {

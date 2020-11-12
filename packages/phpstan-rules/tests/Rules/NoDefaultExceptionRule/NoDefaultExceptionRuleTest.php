@@ -8,7 +8,7 @@ use Iterator;
 use PHPStan\Rules\Rule;
 use RuntimeException;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoDefaultExceptionRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoDefaultExceptionRule;
 
 final class NoDefaultExceptionRuleTest extends AbstractServiceAwareRuleTestCase
 {

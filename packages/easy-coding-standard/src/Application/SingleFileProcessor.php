@@ -4,21 +4,22 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Application;
 
+use Symplify\EasyCodingStandard\Application\ValueObject\FileProcessorCollector;
 use ParseError;
-use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
-use Symplify\Skipper\Skipper\Skipper;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\Skipper\Skipper\ValueObject\Skipper;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class SingleFileProcessor
 {
     /**
-     * @var Skipper
+     * @var \Symplify\Skipper\Skipper\ValueObject\Skipper
      */
     private $skipper;
 
     /**
-     * @var ChangedFilesDetector
+     * @var \Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector
      */
     private $changedFilesDetector;
 
@@ -28,7 +29,7 @@ final class SingleFileProcessor
     private $errorAndDiffCollector;
 
     /**
-     * @var FileProcessorCollector
+     * @var \Symplify\EasyCodingStandard\Application\ValueObject\FileProcessorCollector
      */
     private $fileProcessorCollector;
 

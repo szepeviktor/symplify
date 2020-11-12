@@ -7,7 +7,7 @@ namespace Symplify\MonorepoBuilder\Merge\Application;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\MonorepoBuilder\Merge\ComposerJsonMerger;
 use Symplify\MonorepoBuilder\Merge\Contract\ComposerJsonDecoratorInterface;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\MonorepoBuilder\Merge\Tests\Application\MergedAndDecoratedComposerJsonFactoryTest
@@ -34,7 +34,7 @@ final class MergedAndDecoratedComposerJsonFactory
     }
 
     /**
-     * @param SmartFileInfo[] $packageFileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $packageFileInfos
      */
     public function createFromRootConfigAndPackageFileInfos(
         ComposerJson $mainComposerJson,
@@ -46,7 +46,7 @@ final class MergedAndDecoratedComposerJsonFactory
     }
 
     /**
-     * @param SmartFileInfo[] $packageFileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $packageFileInfos
      */
     private function mergePackageFileInfosAndDecorate(array $packageFileInfos): ComposerJson
     {

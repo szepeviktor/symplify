@@ -6,11 +6,11 @@ namespace Symplify\EasyCodingStandard\SniffRunner\File;
 
 use PHP_CodeSniffer\Fixer;
 use Symplify\EasyCodingStandard\Application\AppliedCheckersCollector;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
 use Symplify\EasyCodingStandard\SniffRunner\ValueObject\File;
-use Symplify\Skipper\Skipper\Skipper;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\Skipper\Skipper\ValueObject\Skipper;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\EasyCodingStandard\SniffRunner\Tests\File\FileFactoryTest
@@ -28,7 +28,7 @@ final class FileFactory
     private $errorAndDiffCollector;
 
     /**
-     * @var Skipper
+     * @var \Symplify\Skipper\Skipper\ValueObject\Skipper
      */
     private $skipper;
 
@@ -38,7 +38,7 @@ final class FileFactory
     private $appliedCheckersCollector;
 
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     private $easyCodingStandardStyle;
 

@@ -9,13 +9,13 @@ use PHPStan\Analyser\Error;
 use PHPStan\Command\AnalysisResult;
 use PHPUnit\Framework\TestCase;
 use Symplify\PHPStanExtensions\DependencyInjection\PHPStanContainerFactory;
-use Symplify\PHPStanExtensions\ErrorFormatter\SymplifyErrorFormatter;
+use Symplify\PHPStanExtensions\ErrorFormatter\ValueObject\SymplifyErrorFormatter;
 use Symplify\PHPStanExtensions\Tests\ErrorFormatter\Source\DummyOutput;
 
 final class SymplifyErrorFormatterTest extends TestCase
 {
     /**
-     * @var SymplifyErrorFormatter
+     * @var \Symplify\PHPStanExtensions\ErrorFormatter\ValueObject\SymplifyErrorFormatter
      */
     private $symplifyErrorFormatter;
 

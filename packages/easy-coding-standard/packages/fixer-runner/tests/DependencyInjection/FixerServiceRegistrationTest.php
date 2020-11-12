@@ -7,14 +7,14 @@ namespace Symplify\EasyCodingStandard\FixerRunner\Tests\DependencyInjection;
 use PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer;
 use PhpCsFixer\Fixer\ClassNotation\VisibilityRequiredFixer;
 use Symplify\EasyCodingStandard\FixerRunner\Application\FixerFileProcessor;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
-use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class FixerServiceRegistrationTest extends AbstractKernelTestCase
 {
     /**
-     * @var PrivatesAccessor
+     * @var \Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor
      */
     private $privatesAccessor;
 

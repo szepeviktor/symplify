@@ -5,8 +5,8 @@ declare(strict_types=1);
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symplify\MonorepoBuilder\Split\ValueObject\ConvertFormat;
 use Symplify\MonorepoBuilder\ValueObject\Option;
-use Symplify\PackageBuilder\Strings\StringFormatConverter;
-use Symplify\SmartFileSystem\FileSystemGuard;
+use Symplify\PackageBuilder\Strings\ValueObject\StringFormatConverter;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();

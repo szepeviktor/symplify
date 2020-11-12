@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Merge\Tests\PathResolver;
 
-use Symplify\MonorepoBuilder\Merge\PathResolver\AutoloadPathNormalizer;
+use Symplify\MonorepoBuilder\Merge\PathResolver\ValueObject\AutoloadPathNormalizer;
 use Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\AbstractComposerJsonDecoratorTest;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class AutoloadPathNormalizerTest extends AbstractComposerJsonDecoratorTest
 {
     /**
-     * @var AutoloadPathNormalizer
+     * @var \Symplify\MonorepoBuilder\Merge\PathResolver\ValueObject\AutoloadPathNormalizer
      */
     private $autoloadPathNormalizer;
 

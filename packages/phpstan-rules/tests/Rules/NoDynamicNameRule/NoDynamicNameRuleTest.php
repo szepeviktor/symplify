@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoDynamicNameRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoDynamicNameRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoDynamicNameRule;
 
 final class NoDynamicNameRuleTest extends AbstractServiceAwareRuleTestCase
 {

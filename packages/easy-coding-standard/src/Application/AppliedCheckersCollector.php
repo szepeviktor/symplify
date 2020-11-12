@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Application;
 
-use Symplify\EasyCodingStandard\Exception\Application\MissingCheckersForChangedFileException;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyCodingStandard\ValueObject\Application\MissingCheckersForChangedFileException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class AppliedCheckersCollector
 {

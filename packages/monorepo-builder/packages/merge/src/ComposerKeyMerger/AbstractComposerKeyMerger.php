@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Merge\ComposerKeyMerger;
 
-use Symplify\MonorepoBuilder\Merge\Arrays\ArraySorter;
-use Symplify\PackageBuilder\Yaml\ParametersMerger;
+use Symplify\MonorepoBuilder\Merge\Arrays\ValueObject\ArraySorter;
+use Symplify\PackageBuilder\Yaml\ValueObject\ParametersMerger;
 
 abstract class AbstractComposerKeyMerger
 {
     /**
-     * @var ParametersMerger
+     * @var \Symplify\PackageBuilder\Yaml\ValueObject\ParametersMerger
      */
     protected $parametersMerger;
 
     /**
-     * @var ArraySorter
+     * @var \Symplify\MonorepoBuilder\Merge\Arrays\ValueObject\ArraySorter
      */
     protected $arraySorter;
 

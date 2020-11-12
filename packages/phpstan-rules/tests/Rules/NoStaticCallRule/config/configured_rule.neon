@@ -1,9 +1,9 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\NoStaticCallRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoStaticCallRule
         tags: [phpstan.rules.rule]
         arguments:
             allowedStaticCallClasses:
                 - Symplify\PHPStanRules\Tests\Rules\NoStaticCallRule\Source\AllowedMethods
 
-    - Symplify\PackageBuilder\Matcher\ArrayStringAndFnMatcher
+    - Symplify\PackageBuilder\Matcher\ValueObject\ArrayStringAndFnMatcher

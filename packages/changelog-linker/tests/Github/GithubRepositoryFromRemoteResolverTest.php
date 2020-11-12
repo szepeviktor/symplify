@@ -6,13 +6,13 @@ namespace Symplify\ChangelogLinker\Tests\Github;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\Exception\Git\InvalidGitRemoteException;
-use Symplify\ChangelogLinker\Github\GithubRepositoryFromRemoteResolver;
+use Symplify\ChangelogLinker\ValueObject\Git\InvalidGitRemoteException;
+use Symplify\ChangelogLinker\Github\ValueObject\GithubRepositoryFromRemoteResolver;
 
 final class GithubRepositoryFromRemoteResolverTest extends TestCase
 {
     /**
-     * @var GithubRepositoryFromRemoteResolver
+     * @var \Symplify\ChangelogLinker\Github\ValueObject\GithubRepositoryFromRemoteResolver
      */
     private $githubRepositoryFromRemoteResolver;
 

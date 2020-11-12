@@ -6,16 +6,16 @@ namespace Symplify\EasyHydrator\Tests;
 
 use ReflectionClass;
 use ReflectionMethod;
-use Symplify\EasyHydrator\ParameterTypeRecognizer;
+use Symplify\EasyHydrator\ValueObject\ParameterTypeRecognizer;
 use Symplify\EasyHydrator\Tests\Fixture\DocTypeTestObject;
 use Symplify\EasyHydrator\Tests\Fixture\Person;
-use Symplify\EasyHydrator\Tests\HttpKernel\EasyHydratorTestKernel;
+use Symplify\EasyHydrator\Tests\HttpKernel\ValueObject\EasyHydratorTestKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 class ParameterTypeRecognizerTest extends AbstractKernelTestCase
 {
     /**
-     * @var ParameterTypeRecognizer
+     * @var \Symplify\EasyHydrator\ValueObject\ParameterTypeRecognizer
      */
     private $parameterTypeRecognizer;
 

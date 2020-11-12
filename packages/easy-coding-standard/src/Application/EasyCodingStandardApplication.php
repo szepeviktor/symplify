@@ -4,37 +4,37 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Application;
 
-use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
-use Symplify\EasyCodingStandard\Configuration\Configuration;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
-use Symplify\EasyCodingStandard\FileSystem\FileFilter;
-use Symplify\EasyCodingStandard\Finder\SourceFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\FileSystem\ValueObject\FileFilter;
+use Symplify\EasyCodingStandard\Finder\ValueObject\SourceFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class EasyCodingStandardApplication
 {
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     private $easyCodingStandardStyle;
 
     /**
-     * @var SourceFinder
+     * @var \Symplify\EasyCodingStandard\Finder\ValueObject\SourceFinder
      */
     private $sourceFinder;
 
     /**
-     * @var ChangedFilesDetector
+     * @var \Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector
      */
     private $changedFilesDetector;
 
     /**
-     * @var Configuration
+     * @var \Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration
      */
     private $configuration;
 
     /**
-     * @var FileFilter
+     * @var \Symplify\EasyCodingStandard\FileSystem\ValueObject\FileFilter
      */
     private $fileFilter;
 
@@ -97,7 +97,7 @@ final class EasyCodingStandardApplication
     }
 
     /**
-     * @param SmartFileInfo[] $fileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $fileInfos
      */
     private function processFoundFiles(array $fileInfos): void
     {

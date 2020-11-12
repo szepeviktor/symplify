@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Symplify\EasyTesting\ValueObject;
 
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class InputFileInfoAndExpectedFileInfo
 {
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $inputFileInfo;
 
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $expectedFileInfo;
 

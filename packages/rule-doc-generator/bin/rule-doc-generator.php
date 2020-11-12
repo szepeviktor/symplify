@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Symplify\RuleDocGenerator\HttpKernel\RuleDocGeneratorKernel;
+use Symplify\RuleDocGenerator\HttpKernel\ValueObject\RuleDocGeneratorKernel;
 use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 
 # 1. autoload

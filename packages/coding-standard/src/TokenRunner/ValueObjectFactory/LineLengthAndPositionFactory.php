@@ -7,9 +7,9 @@ namespace Symplify\CodingStandard\TokenRunner\ValueObjectFactory;
 use Nette\Utils\Strings;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
-use Symplify\CodingStandard\TokenRunner\Exception\TokenNotFoundException;
+use Symplify\CodingStandard\TokenRunner\ValueObject\TokenNotFoundException;
 use Symplify\CodingStandard\TokenRunner\ValueObject\LineLengthAndPosition;
-use Symplify\PackageBuilder\Configuration\StaticEolConfiguration;
+use Symplify\PackageBuilder\Configuration\ValueObject\StaticEolConfiguration;
 
 final class LineLengthAndPositionFactory
 {

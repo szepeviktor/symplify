@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\PHPStanRules\CognitiveComplexity\NodeVisitor;
 
+use Symplify\PHPStanRules\CognitiveComplexity\NodeVisitor\ValueObject\AbstractComplexityNodeVisitor;
 use PhpParser\Node;
 use Symplify\PHPStanRules\CognitiveComplexity\DataCollector\CognitiveComplexityDataCollector;
 

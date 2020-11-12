@@ -6,10 +6,10 @@ namespace Symplify\MonorepoBuilder\Split\Process;
 
 use Nette\Utils\Strings;
 use Symfony\Component\Process\Process;
-use Symplify\MonorepoBuilder\Split\Configuration\RepositoryGuard;
+use Symplify\MonorepoBuilder\Split\Configuration\ValueObject\RepositoryGuard;
 use Symplify\MonorepoBuilder\ValueObject\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 /**
  * @see \Symplify\MonorepoBuilder\Split\Tests\Process\ProcessFactoryTest
@@ -32,12 +32,12 @@ final class ProcessFactory
     private $subsplitCacheDirectory;
 
     /**
-     * @var RepositoryGuard
+     * @var \Symplify\MonorepoBuilder\Split\Configuration\ValueObject\RepositoryGuard
      */
     private $repositoryGuard;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\PHPStanPHPConfig\DataCollector;
 
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ImportsDataCollector
 {

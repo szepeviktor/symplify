@@ -1,5 +1,5 @@
 services:
     errorFormatter.symplify:
-        class: 'Symplify\PHPStanExtensions\ErrorFormatter\SymplifyErrorFormatter'
+        class: 'Symplify\PHPStanExtensions\ErrorFormatter\ValueObject\SymplifyErrorFormatter'
 
     - Symfony\Component\Console\Terminal

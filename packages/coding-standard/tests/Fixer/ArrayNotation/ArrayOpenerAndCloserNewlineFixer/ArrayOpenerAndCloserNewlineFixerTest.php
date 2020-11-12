@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\Tests\Fixer\ArrayNotation\ArrayOpenerAndCloserNewlineFixer;
 
 use Iterator;
-use Symplify\CodingStandard\Fixer\ArrayNotation\ArrayOpenerAndCloserNewlineFixer;
+use Symplify\CodingStandard\Fixer\ArrayNotation\ValueObject\ArrayOpenerAndCloserNewlineFixer;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ArrayOpenerAndCloserNewlineFixerTest extends AbstractCheckerTestCase
 {

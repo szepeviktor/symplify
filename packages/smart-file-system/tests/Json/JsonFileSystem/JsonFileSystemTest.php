@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Symplify\SmartFileSystem\Tests\Json\JsonFileSystem;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\SmartFileSystem\FileSystemGuard;
-use Symplify\SmartFileSystem\Json\JsonFileSystem;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
+use Symplify\SmartFileSystem\Json\ValueObject\JsonFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class JsonFileSystemTest extends TestCase
 {
@@ -17,12 +17,12 @@ final class JsonFileSystemTest extends TestCase
     private const TEMPORARY_FILE_PATH = __DIR__ . '/temppath.json';
 
     /**
-     * @var JsonFileSystem
+     * @var \Symplify\SmartFileSystem\Json\ValueObject\JsonFileSystem
      */
     private $jsonFileSystem;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

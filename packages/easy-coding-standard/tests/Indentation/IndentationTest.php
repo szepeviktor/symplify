@@ -10,15 +10,15 @@ use PhpCsFixer\Fixer\WhitespacesAwareFixerInterface;
 use PhpCsFixer\WhitespacesFixerConfig;
 use Psr\Container\ContainerInterface;
 use Symplify\EasyCodingStandard\FixerRunner\Application\FixerFileProcessor;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
-use Symplify\PackageBuilder\Configuration\StaticEolConfiguration;
-use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
+use Symplify\PackageBuilder\Configuration\ValueObject\StaticEolConfiguration;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class IndentationTest extends AbstractKernelTestCase
 {
     /**
-     * @var PrivatesAccessor
+     * @var \Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor
      */
     private $privatesAccessor;
 

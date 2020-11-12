@@ -10,19 +10,19 @@ use PHPUnit\Framework\TestCase;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 use Symfony\Component\Finder\SplFileInfo as SymfonySplFileInfo;
-use Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class FinderSanitizerTest extends TestCase
 {
     /**
-     * @var FinderSanitizer
+     * @var \Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer
      */
     private $finderSanitizer;
 
     protected function setUp(): void
     {
-        $this->finderSanitizer = new FinderSanitizer();
+        $this->finderSanitizer = new \Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer();
     }
 
     public function testValidTypes(): void
@@ -65,8 +65,8 @@ final class FinderSanitizerTest extends TestCase
      * finder does not. so we test if the correct files are there but ignore the order.
      */
     private function assertFilesEqualFixtureFiles(
-        SmartFileInfo $firstSmartFileInfo,
-        SmartFileInfo $secondSmartFileInfo
+        \Symplify\SmartFileSystem\ValueObject\SmartFileInfo $firstSmartFileInfo,
+        \Symplify\SmartFileSystem\ValueObject\SmartFileInfo $secondSmartFileInfo
     ): void {
         $this->assertFileIsFromFixtureDirAndHasCorrectClass($firstSmartFileInfo);
         $this->assertFileIsFromFixtureDirAndHasCorrectClass($secondSmartFileInfo);
@@ -83,7 +83,7 @@ final class FinderSanitizerTest extends TestCase
         );
     }
 
-    private function assertFileIsFromFixtureDirAndHasCorrectClass(SmartFileInfo $smartFileInfo): void
+    private function assertFileIsFromFixtureDirAndHasCorrectClass(\Symplify\SmartFileSystem\ValueObject\SmartFileInfo $smartFileInfo): void
     {
         $this->assertInstanceOf(SymfonySplFileInfo::class, $smartFileInfo);
 

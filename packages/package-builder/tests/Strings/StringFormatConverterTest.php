@@ -6,12 +6,12 @@ namespace Symplify\PackageBuilder\Tests\Strings;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\PackageBuilder\Strings\StringFormatConverter;
+use Symplify\PackageBuilder\Strings\ValueObject\StringFormatConverter;
 
 final class StringFormatConverterTest extends TestCase
 {
     /**
-     * @var StringFormatConverter
+     * @var \Symplify\PackageBuilder\Strings\ValueObject\StringFormatConverter
      */
     private $stringFormatConverter;
 

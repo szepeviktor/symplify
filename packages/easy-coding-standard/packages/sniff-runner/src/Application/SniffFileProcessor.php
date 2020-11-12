@@ -10,12 +10,12 @@ use PHP_CodeSniffer\Util\Tokens;
 use PhpCsFixer\Differ\DifferInterface;
 use Symplify\EasyCodingStandard\Application\AbstractFileProcessor;
 use Symplify\EasyCodingStandard\Application\AppliedCheckersCollector;
-use Symplify\EasyCodingStandard\Configuration\Configuration;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
 use Symplify\EasyCodingStandard\SniffRunner\File\FileFactory;
 use Symplify\EasyCodingStandard\SniffRunner\ValueObject\File;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 /**
  * @see \Symplify\EasyCodingStandard\Tests\Error\ErrorCollector\SniffFileProcessorTest
@@ -43,7 +43,7 @@ final class SniffFileProcessor extends AbstractFileProcessor
     private $fileFactory;
 
     /**
-     * @var Configuration
+     * @var \Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration
      */
     private $configuration;
 
@@ -63,7 +63,7 @@ final class SniffFileProcessor extends AbstractFileProcessor
     private $appliedCheckersCollector;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

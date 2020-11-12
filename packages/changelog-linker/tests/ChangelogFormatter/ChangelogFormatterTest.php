@@ -6,15 +6,15 @@ namespace Symplify\ChangelogLinker\Tests\ChangelogFormatter;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\ChangelogFormatter;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
+use Symplify\ChangelogLinker\ValueObject\ChangelogFormatter;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ChangelogFormatterTest extends TestCase
 {
     /**
-     * @var ChangelogFormatter
+     * @var \Symplify\ChangelogLinker\ValueObject\ChangelogFormatter
      */
     private $changelogFormatter;
 

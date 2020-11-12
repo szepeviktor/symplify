@@ -6,7 +6,7 @@ namespace Symplify\SymplifyKernel\Tests\Console\AbstractSymplifyConsoleApplicati
 
 use Symfony\Component\Console\Application;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SymplifyKernel\Tests\HttpKernel\PackageBuilderTestingKernel;
+use Symplify\SymplifyKernel\Tests\HttpKernel\ValueObject\PackageBuilderTestingKernel;
 
 final class AutowiredConsoleApplicationTest extends AbstractKernelTestCase
 {

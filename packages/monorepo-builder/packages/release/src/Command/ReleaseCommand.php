@@ -8,42 +8,42 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\Release\Configuration\StageResolver;
-use Symplify\MonorepoBuilder\Release\Configuration\VersionResolver;
-use Symplify\MonorepoBuilder\Release\Output\ReleaseWorkerReporter;
-use Symplify\MonorepoBuilder\Release\ReleaseWorkerProvider;
+use Symplify\MonorepoBuilder\Release\Configuration\ValueObject\StageResolver;
+use Symplify\MonorepoBuilder\Release\Configuration\ValueObject\VersionResolver;
+use Symplify\MonorepoBuilder\Release\Output\ValueObject\ReleaseWorkerReporter;
+use Symplify\MonorepoBuilder\Release\ValueObject\ReleaseWorkerProvider;
 use Symplify\MonorepoBuilder\Release\ValueObject\SemVersion;
 use Symplify\MonorepoBuilder\Release\ValueObject\Stage;
-use Symplify\MonorepoBuilder\Validator\SourcesPresenceValidator;
+use Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator;
 use Symplify\MonorepoBuilder\ValueObject\File;
 use Symplify\MonorepoBuilder\ValueObject\Option;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class ReleaseCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var ReleaseWorkerProvider
+     * @var \Symplify\MonorepoBuilder\Release\ValueObject\ReleaseWorkerProvider
      */
     private $releaseWorkerProvider;
 
     /**
-     * @var SourcesPresenceValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator
      */
     private $sourcesPresenceValidator;
 
     /**
-     * @var StageResolver
+     * @var \Symplify\MonorepoBuilder\Release\Configuration\ValueObject\StageResolver
      */
     private $stageResolver;
 
     /**
-     * @var VersionResolver
+     * @var \Symplify\MonorepoBuilder\Release\Configuration\ValueObject\VersionResolver
      */
     private $versionResolver;
 
     /**
-     * @var ReleaseWorkerReporter
+     * @var \Symplify\MonorepoBuilder\Release\Output\ValueObject\ReleaseWorkerReporter
      */
     private $releaseWorkerReporter;
 

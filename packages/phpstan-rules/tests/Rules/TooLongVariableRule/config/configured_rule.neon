@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\TooLongVariableRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\TooLongVariableRule
         tags: [phpstan.rules.rule]
         arguments:
             maxVariableLength: 10

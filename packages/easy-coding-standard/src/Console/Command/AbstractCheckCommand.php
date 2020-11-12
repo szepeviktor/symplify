@@ -10,24 +10,24 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\EasyCodingStandard\Application\EasyCodingStandardApplication;
-use Symplify\EasyCodingStandard\Configuration\Configuration;
-use Symplify\EasyCodingStandard\Console\Output\ConsoleOutputFormatter;
-use Symplify\EasyCodingStandard\Console\Output\OutputFormatterCollector;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration;
+use Symplify\EasyCodingStandard\Console\Output\ValueObject\ConsoleOutputFormatter;
+use Symplify\EasyCodingStandard\Console\Output\ValueObject\OutputFormatterCollector;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffResultFactory;
-use Symplify\EasyCodingStandard\Guard\LoadedCheckersGuard;
+use Symplify\EasyCodingStandard\Guard\ValueObject\LoadedCheckersGuard;
 use Symplify\EasyCodingStandard\ValueObject\Option;
 
 abstract class AbstractCheckCommand extends Command
 {
     /**
-     * @var Configuration
+     * @var \Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration
      */
     protected $configuration;
 
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     protected $easyCodingStandardStyle;
 
@@ -37,7 +37,7 @@ abstract class AbstractCheckCommand extends Command
     protected $easyCodingStandardApplication;
 
     /**
-     * @var OutputFormatterCollector
+     * @var \Symplify\EasyCodingStandard\Console\Output\ValueObject\OutputFormatterCollector
      */
     private $outputFormatterCollector;
 
@@ -52,7 +52,7 @@ abstract class AbstractCheckCommand extends Command
     private $errorAndDiffResultFactory;
 
     /**
-     * @var LoadedCheckersGuard
+     * @var \Symplify\EasyCodingStandard\Guard\ValueObject\LoadedCheckersGuard
      */
     private $loadedCheckersGuard;
 

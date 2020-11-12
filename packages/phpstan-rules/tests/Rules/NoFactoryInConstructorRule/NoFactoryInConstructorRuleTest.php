@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoFactoryInConstructorRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoFactoryInConstructorRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoFactoryInConstructorRule;
 
 final class NoFactoryInConstructorRuleTest extends AbstractServiceAwareRuleTestCase
 {

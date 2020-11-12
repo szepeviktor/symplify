@@ -9,8 +9,8 @@ use Symplify\EasyTesting\ValueObject\InputAndExpected;
 use Symplify\EasyTesting\ValueObject\InputFileInfoAndExpected;
 use Symplify\EasyTesting\ValueObject\InputFileInfoAndExpectedFileInfo;
 use Symplify\EasyTesting\ValueObject\SplitLine;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class StaticFixtureSplitter
 {

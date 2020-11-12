@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\RequireThisOnParentMethodCallRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\RequireThisOnParentMethodCallRule;
+use Symplify\PHPStanRules\Rules\ValueObject\RequireThisOnParentMethodCallRule;
 
 final class RequireThisOnParentMethodCallRuleTest extends AbstractServiceAwareRuleTestCase
 {

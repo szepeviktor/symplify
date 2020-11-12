@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\SymfonyStaticDumper\Tests\FileSystem;
 
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileSystem;
-use Symplify\SymfonyStaticDumper\FileSystem\AssetsCopier;
-use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\TestSymfonyStaticDumperKernel;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
+use Symplify\SymfonyStaticDumper\FileSystem\ValueObject\AssetsCopier;
+use Symplify\SymfonyStaticDumper\Tests\TestProject\HttpKernel\ValueObject\TestSymfonyStaticDumperKernel;
 
 final class AssetsCopierTest extends AbstractKernelTestCase
 {
     /**
-     * @var AssetsCopier
+     * @var \Symplify\SymfonyStaticDumper\FileSystem\ValueObject\AssetsCopier
      */
     private $assetsCopier;
 

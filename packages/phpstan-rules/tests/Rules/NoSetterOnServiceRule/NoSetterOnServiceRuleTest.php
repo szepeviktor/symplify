@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoSetterOnServiceRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoSetterOnServiceRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoSetterOnServiceRule;
 
 final class NoSetterOnServiceRuleTest extends AbstractServiceAwareRuleTestCase
 {

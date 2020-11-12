@@ -9,7 +9,7 @@ use Symplify\ChangelogLinker\Contract\Worker\WorkerInterface;
 use Symplify\ChangelogLinker\LinkAppender;
 use Symplify\ChangelogLinker\ValueObject\Option;
 use Symplify\ChangelogLinker\ValueObject\RegexPattern;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 
 final class LinksToReferencesWorker implements WorkerInterface
 {

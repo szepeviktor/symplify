@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Testing\Tests\ComposerJson;
 
-use Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Testing\ComposerJson\ComposerJsonSymlinker;
+use Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Testing\ComposerJson\ValueObject\ComposerJsonSymlinker;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ComposerJsonSymlinkerTest extends AbstractKernelTestCase
 {
     /**
-     * @var ComposerJsonSymlinker
+     * @var \Symplify\MonorepoBuilder\Testing\ComposerJson\ValueObject\ComposerJsonSymlinker
      */
     private $composerJsonSymlinker;
 
     /**
-     * @var JsonFileManager
+     * @var \Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager
      */
     private $jsonFileManager;
 

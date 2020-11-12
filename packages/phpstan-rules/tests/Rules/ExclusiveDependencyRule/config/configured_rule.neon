@@ -1,7 +1,7 @@
 services:
-    - Symplify\PackageBuilder\Matcher\ArrayStringAndFnMatcher
+    - Symplify\PackageBuilder\Matcher\ValueObject\ArrayStringAndFnMatcher
     -
-        class: Symplify\PHPStanRules\Rules\ExclusiveDependencyRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ExclusiveDependencyRule
         tags: [phpstan.rules.rule]
         arguments:
             allowedTypeByLocations:

@@ -5,19 +5,19 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Release\Version;
 
 use PharIo\Version\Version;
-use Symplify\MonorepoBuilder\Release\Guard\ReleaseGuard;
+use Symplify\MonorepoBuilder\Release\Guard\ValueObject\ReleaseGuard;
 use Symplify\MonorepoBuilder\Release\ValueObject\SemVersion;
-use Symplify\MonorepoBuilder\Split\Git\GitManager;
+use Symplify\MonorepoBuilder\Split\Git\ValueObject\GitManager;
 
 final class VersionFactory
 {
     /**
-     * @var ReleaseGuard
+     * @var \Symplify\MonorepoBuilder\Release\Guard\ValueObject\ReleaseGuard
      */
     private $releaseGuard;
 
     /**
-     * @var GitManager
+     * @var \Symplify\MonorepoBuilder\Split\Git\ValueObject\GitManager
      */
     private $gitManager;
 

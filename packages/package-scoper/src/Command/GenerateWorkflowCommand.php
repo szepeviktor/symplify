@@ -7,8 +7,8 @@ namespace Symplify\PackageScoper\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class GenerateWorkflowCommand extends AbstractSymplifyCommand
 {

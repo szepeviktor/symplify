@@ -8,7 +8,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symplify\PackageBuilder\ValueObject\Option;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 abstract class AbstractSymplifyCommand extends Command
 {
@@ -18,7 +18,7 @@ abstract class AbstractSymplifyCommand extends Command
     protected $symfonyStyle;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     protected $smartFileSystem;
 

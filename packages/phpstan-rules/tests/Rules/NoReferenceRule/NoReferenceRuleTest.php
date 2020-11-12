@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoReferenceRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoReferenceRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoReferenceRule;
 
 final class NoReferenceRuleTest extends AbstractServiceAwareRuleTestCase
 {

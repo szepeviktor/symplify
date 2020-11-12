@@ -6,14 +6,14 @@ namespace Symplify\SmartFileSystem\Tests\Finder\SmartFinder;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\SmartFileSystem\FileSystemFilter;
-use Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use Symplify\SmartFileSystem\Finder\SmartFinder;
+use Symplify\SmartFileSystem\ValueObject\FileSystemFilter;
+use Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer;
+use Symplify\SmartFileSystem\Finder\ValueObject\SmartFinder;
 
 final class SmartFinderTest extends TestCase
 {
     /**
-     * @var SmartFinder
+     * @var \Symplify\SmartFileSystem\Finder\ValueObject\SmartFinder
      */
     private $smartFinder;
 

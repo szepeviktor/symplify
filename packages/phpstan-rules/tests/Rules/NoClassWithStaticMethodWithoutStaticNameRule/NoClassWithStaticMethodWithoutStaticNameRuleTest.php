@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoClassWithStaticMethodWithoutStatic
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoClassWithStaticMethodWithoutStaticNameRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoClassWithStaticMethodWithoutStaticNameRule;
 use Symplify\PHPStanRules\Tests\Rules\NoClassWithStaticMethodWithoutStaticNameRule\Fixture\ClassWithMethod;
 
 final class NoClassWithStaticMethodWithoutStaticNameRuleTest extends AbstractServiceAwareRuleTestCase

@@ -6,7 +6,7 @@ namespace Symplify\EasyCodingStandard\Tests\Issues;
 
 use Iterator;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see https://github.com/symplify/symplify/issues/1024

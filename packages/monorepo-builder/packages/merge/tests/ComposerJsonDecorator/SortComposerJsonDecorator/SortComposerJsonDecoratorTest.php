@@ -6,8 +6,8 @@ namespace Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\SortCompose
 
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\SortComposerJsonDecorator;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\ValueObject\SortComposerJsonDecorator;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class SortComposerJsonDecoratorTest extends AbstractKernelTestCase
@@ -18,7 +18,7 @@ final class SortComposerJsonDecoratorTest extends AbstractKernelTestCase
     private $composerJson;
 
     /**
-     * @var SortComposerJsonDecorator
+     * @var \Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\ValueObject\SortComposerJsonDecorator
      */
     private $sortComposerJsonDecorator;
 

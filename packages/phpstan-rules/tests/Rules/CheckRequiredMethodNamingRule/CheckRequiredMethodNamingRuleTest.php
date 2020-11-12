@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckRequiredMethodNamingRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckRequiredMethodNamingRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckRequiredMethodNamingRule;
 
 final class CheckRequiredMethodNamingRuleTest extends AbstractServiceAwareRuleTestCase
 {

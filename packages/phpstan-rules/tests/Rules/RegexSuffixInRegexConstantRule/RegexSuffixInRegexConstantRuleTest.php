@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\RegexSuffixInRegexConstantRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\RegexSuffixInRegexConstantRule;
+use Symplify\PHPStanRules\Rules\ValueObject\RegexSuffixInRegexConstantRule;
 
 final class RegexSuffixInRegexConstantRuleTest extends AbstractServiceAwareRuleTestCase
 {

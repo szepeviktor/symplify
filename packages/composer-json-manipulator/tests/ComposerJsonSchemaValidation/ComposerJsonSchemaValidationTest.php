@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace Symplify\ComposerJsonManipulator\Tests\ComposerJsonSchemaValidation;
 
-use Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ComposerJsonManipulatorKernel;
+use Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager;
+use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ValueObject\ComposerJsonManipulatorKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class ComposerJsonSchemaValidationTest extends AbstractKernelTestCase
 {
     /**
-     * @var JsonFileManager
+     * @var \Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager
      */
     private $jsonFileManager;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

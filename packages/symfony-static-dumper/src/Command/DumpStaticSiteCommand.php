@@ -8,8 +8,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\SymfonyStaticDumper\Application\SymfonyStaticDumperApplication;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\SymfonyStaticDumper\Application\ValueObject\SymfonyStaticDumperApplication;
 
 final class DumpStaticSiteCommand extends AbstractSymplifyCommand
 {
@@ -24,7 +24,7 @@ final class DumpStaticSiteCommand extends AbstractSymplifyCommand
     private $outputDirectory;
 
     /**
-     * @var SymfonyStaticDumperApplication
+     * @var \Symplify\SymfonyStaticDumper\Application\ValueObject\SymfonyStaticDumperApplication
      */
     private $symfonyStaticDumperApplication;
 

@@ -7,34 +7,34 @@ namespace Symplify\MonorepoBuilder\Testing\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\FileSystem\ComposerJsonProvider;
-use Symplify\MonorepoBuilder\Testing\ComposerJsonRepositoriesUpdater;
-use Symplify\MonorepoBuilder\Testing\ComposerJsonRequireUpdater;
+use Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider;
+use Symplify\MonorepoBuilder\Testing\ValueObject\ComposerJsonRepositoriesUpdater;
+use Symplify\MonorepoBuilder\Testing\ValueObject\ComposerJsonRequireUpdater;
 use Symplify\MonorepoBuilder\Testing\ValueObject\Option;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\SmartFileSystem\FileSystemGuard;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class LocalizeComposerPathsCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var ComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider
      */
     private $composerJsonProvider;
 
     /**
-     * @var ComposerJsonRequireUpdater
+     * @var \Symplify\MonorepoBuilder\Testing\ValueObject\ComposerJsonRequireUpdater
      */
     private $composerJsonRequireUpdater;
 
     /**
-     * @var FileSystemGuard
+     * @var \Symplify\SmartFileSystem\ValueObject\FileSystemGuard
      */
     private $fileSystemGuard;
 
     /**
-     * @var ComposerJsonRepositoriesUpdater
+     * @var \Symplify\MonorepoBuilder\Testing\ValueObject\ComposerJsonRepositoriesUpdater
      */
     private $composerJsonRepositoriesUpdater;
 

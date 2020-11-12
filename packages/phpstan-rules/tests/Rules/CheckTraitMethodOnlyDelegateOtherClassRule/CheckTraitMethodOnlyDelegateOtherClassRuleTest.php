@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckTraitMethodOnlyDelegateOtherCla
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckTraitMethodOnlyDelegateOtherClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckTraitMethodOnlyDelegateOtherClassRule;
 
 final class CheckTraitMethodOnlyDelegateOtherClassRuleTest extends AbstractServiceAwareRuleTestCase
 {

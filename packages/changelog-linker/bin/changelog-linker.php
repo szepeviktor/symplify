@@ -5,8 +5,8 @@
 declare(strict_types=1);
 
 use Symfony\Component\Console\Input\ArgvInput;
-use Symplify\ChangelogLinker\HttpKernel\ChangelogLinkerKernel;
-use Symplify\SetConfigResolver\ConfigResolver;
+use Symplify\ChangelogLinker\HttpKernel\ValueObject\ChangelogLinkerKernel;
+use Symplify\SetConfigResolver\ValueObject\ConfigResolver;
 use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 
 $possibleAutoloadPaths = [

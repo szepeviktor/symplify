@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\PreventParentMethodVisibilityOverrid
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\PreventParentMethodVisibilityOverrideRule;
+use Symplify\PHPStanRules\Rules\ValueObject\PreventParentMethodVisibilityOverrideRule;
 
 final class PreventParentMethodVisibilityOverrideRuleTest extends AbstractServiceAwareRuleTestCase
 {

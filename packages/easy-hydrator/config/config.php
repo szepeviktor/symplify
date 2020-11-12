@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Contracts\Cache\CacheInterface;
-use Symplify\PackageBuilder\Strings\StringFormatConverter;
+use Symplify\PackageBuilder\Strings\ValueObject\StringFormatConverter;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();

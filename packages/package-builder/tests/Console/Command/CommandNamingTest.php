@@ -6,7 +6,7 @@ namespace Symplify\PackageBuilder\Tests\Console\Command;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\PackageBuilder\Console\Command\CommandNaming;
+use Symplify\PackageBuilder\Console\ValueObject\CommandNaming;
 
 final class CommandNamingTest extends TestCase
 {

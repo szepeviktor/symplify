@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace Symplify\Autodiscovery\Tests\Yaml;
 
 use Symfony\Component\Yaml\Yaml;
-use Symplify\Autodiscovery\HttpKernel\AutodiscoveryKernel;
-use Symplify\Autodiscovery\Yaml\ExplicitToAutodiscoveryConverter;
+use Symplify\Autodiscovery\HttpKernel\ValueObject\AutodiscoveryKernel;
+use Symplify\Autodiscovery\Yaml\ValueObject\ExplicitToAutodiscoveryConverter;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ExplicitToAutodiscoveryConverterTest extends AbstractKernelTestCase
 {
     /**
-     * @var ExplicitToAutodiscoveryConverter
+     * @var \Symplify\Autodiscovery\Yaml\ValueObject\ExplicitToAutodiscoveryConverter
      */
     private $explicitToAutodiscoveryConverter;
 

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoFuncCallInMethodCallRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoFuncCallInMethodCallRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoFuncCallInMethodCallRule;
 
 final class NoFuncCallInMethodCallRuleTest extends AbstractServiceAwareRuleTestCase
 {

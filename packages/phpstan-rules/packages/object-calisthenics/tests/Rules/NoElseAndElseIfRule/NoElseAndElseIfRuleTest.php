@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\NoElseAndElseIfRu
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\NoElseAndElseIfRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\NoElseAndElseIfRule;
 
 final class NoElseAndElseIfRuleTest extends AbstractServiceAwareRuleTestCase
 {

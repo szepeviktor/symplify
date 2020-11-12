@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\TooManyPropertiesRule
+        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\TooManyPropertiesRule
         tags: [phpstan.rules.rule]
         arguments:
             maxPropertyCount: 3

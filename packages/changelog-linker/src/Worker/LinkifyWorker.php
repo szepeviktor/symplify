@@ -8,7 +8,7 @@ use Nette\Utils\Strings;
 use Symplify\ChangelogLinker\Contract\Worker\WorkerInterface;
 use Symplify\ChangelogLinker\LinkAppender;
 use Symplify\ChangelogLinker\ValueObject\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 
 final class LinkifyWorker implements WorkerInterface
 {

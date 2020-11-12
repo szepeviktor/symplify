@@ -11,7 +11,7 @@ use Symfony\Component\Config\Loader\LoaderResolver;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Config\FileLocator;
 use Symfony\Component\HttpKernel\KernelInterface;
-use Symplify\PackageBuilder\DependencyInjection\FileLoader\ParameterMergingPhpFileLoader;
+use Symplify\PackageBuilder\DependencyInjection\FileLoader\ValueObject\ParameterMergingPhpFileLoader;
 
 final class DelegatingLoaderFactory
 {
@@ -43,7 +43,7 @@ final class DelegatingLoaderFactory
     ): DelegatingLoader {
         $loaders = [
             new GlobFileLoader($simpleFileLocator),
-            new ParameterMergingPhpFileLoader($containerBuilder, $simpleFileLocator),
+            new \Symplify\PackageBuilder\DependencyInjection\FileLoader\ValueObject\ParameterMergingPhpFileLoader($containerBuilder, $simpleFileLocator),
         ];
         $loaderResolver = new LoaderResolver($loaders);
 

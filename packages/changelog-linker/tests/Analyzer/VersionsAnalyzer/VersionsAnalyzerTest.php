@@ -6,7 +6,7 @@ namespace Symplify\ChangelogLinker\Tests\Analyzer\VersionsAnalyzer;
 
 use PHPUnit\Framework\TestCase;
 use Symplify\ChangelogLinker\Analyzer\VersionsAnalyzer;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class VersionsAnalyzerTest extends TestCase
 {

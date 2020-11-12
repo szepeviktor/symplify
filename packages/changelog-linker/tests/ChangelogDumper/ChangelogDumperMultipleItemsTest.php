@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\Tests\ChangelogDumper;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\ChangelogDumper;
-use Symplify\ChangelogLinker\ChangelogFormatter;
-use Symplify\ChangelogLinker\Git\GitCommitDateTagResolver;
+use Symplify\ChangelogLinker\ValueObject\ChangelogDumper;
+use Symplify\ChangelogLinker\ValueObject\ChangelogFormatter;
+use Symplify\ChangelogLinker\Git\ValueObject\GitCommitDateTagResolver;
 use Symplify\ChangelogLinker\ValueObject\ChangeTree\Change;
 
 final class ChangelogDumperMultipleItemsTest extends TestCase
@@ -18,7 +18,7 @@ final class ChangelogDumperMultipleItemsTest extends TestCase
     private $changes = [];
 
     /**
-     * @var ChangelogDumper
+     * @var \Symplify\ChangelogLinker\ValueObject\ChangelogDumper
      */
     private $changelogDumper;
 

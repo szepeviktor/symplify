@@ -6,11 +6,11 @@ namespace Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\RemoverComp
 
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\RemoverComposerJsonDecorator;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\ValueObject\RemoverComposerJsonDecorator;
 use Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\AbstractComposerJsonDecoratorTest;
 use Symplify\MonorepoBuilder\ValueObject\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 
 final class RemoverComposerJsonDecoratorTest extends AbstractComposerJsonDecoratorTest
 {
@@ -42,7 +42,7 @@ final class RemoverComposerJsonDecoratorTest extends AbstractComposerJsonDecorat
     private $expectedComposerJson;
 
     /**
-     * @var RemoverComposerJsonDecorator
+     * @var \Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator\ValueObject\RemoverComposerJsonDecorator
      */
     private $removerComposerJsonDecorator;
 
@@ -50,7 +50,7 @@ final class RemoverComposerJsonDecoratorTest extends AbstractComposerJsonDecorat
     {
         $this->bootKernel(MonorepoBuilderKernel::class);
 
-        /** @var ParameterProvider $parameterProvider */
+        /** @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider $parameterProvider */
         $parameterProvider = self::$container->get(ParameterProvider::class);
         $parameterProvider->changeParameter(Option::DATA_TO_REMOVE, [
             'require' => [

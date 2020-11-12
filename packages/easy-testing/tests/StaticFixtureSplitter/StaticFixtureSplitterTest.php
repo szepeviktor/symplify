@@ -6,7 +6,7 @@ namespace Symplify\EasyTesting\Tests\StaticFixtureSplitter;
 
 use PHPUnit\Framework\TestCase;
 use Symplify\EasyTesting\StaticFixtureSplitter;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class StaticFixtureSplitterTest extends TestCase
 {

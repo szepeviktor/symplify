@@ -6,12 +6,12 @@ namespace Symplify\ChangelogLinker\Tests\ChangeTree;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\ChangeTree\ChangeSorter;
+use Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeSorter;
 
 final class ChangeSorterTogetherTest extends TestCase
 {
     /**
-     * @var ChangeSorter
+     * @var \Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeSorter
      */
     private $changeSorter;
 

@@ -1,12 +1,12 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\AnnotateRegexClassConstWithRegexLinkRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\AnnotateRegexClassConstWithRegexLinkRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoInlineStringRegexRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoInlineStringRegexRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\RegexSuffixInRegexConstantRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\RegexSuffixInRegexConstantRule
         tags: [phpstan.rules.rule]

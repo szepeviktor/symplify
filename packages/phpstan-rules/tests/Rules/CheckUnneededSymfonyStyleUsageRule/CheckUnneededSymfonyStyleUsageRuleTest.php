@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckUnneededSymfonyStyleUsageRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckUnneededSymfonyStyleUsageRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckUnneededSymfonyStyleUsageRule;
 
 final class CheckUnneededSymfonyStyleUsageRuleTest extends AbstractServiceAwareRuleTestCase
 {

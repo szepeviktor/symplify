@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\SetConfigResolver\ValueObject;
 
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class Set
 {
@@ -14,7 +14,7 @@ final class Set
     private $name;
 
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $setFileInfo;
 

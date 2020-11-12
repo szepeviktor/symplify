@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\Tests\Git;
 
 use Iterator;
-use Symplify\ChangelogLinker\Git\GitCommitDateTagResolver;
-use Symplify\ChangelogLinker\HttpKernel\ChangelogLinkerKernel;
+use Symplify\ChangelogLinker\Git\ValueObject\GitCommitDateTagResolver;
+use Symplify\ChangelogLinker\HttpKernel\ValueObject\ChangelogLinkerKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class GitCommitDateTagResolverTest extends AbstractKernelTestCase
 {
     /**
-     * @var GitCommitDateTagResolver
+     * @var \Symplify\ChangelogLinker\Git\ValueObject\GitCommitDateTagResolver
      */
     private $gitCommitDateTagResolver;
 

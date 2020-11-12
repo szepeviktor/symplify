@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\Tests\Fixer\Spacing\MethodChainingNewlineFixer;
 
 use Iterator;
-use Symplify\CodingStandard\Fixer\Spacing\MethodChainingNewlineFixer;
+use Symplify\CodingStandard\Fixer\Spacing\ValueObject\MethodChainingNewlineFixer;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class MethodChainingNewlineFixerTest extends AbstractCheckerTestCase
 {

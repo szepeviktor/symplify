@@ -8,8 +8,8 @@ use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\MonorepoBuilder\Merge\Configuration\MergedPackagesCollector;
 use Symplify\MonorepoBuilder\Merge\Contract\ComposerKeyMergerInterface;
-use Symplify\MonorepoBuilder\Merge\PathResolver\AutoloadPathNormalizer;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\MonorepoBuilder\Merge\PathResolver\ValueObject\AutoloadPathNormalizer;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonMerger\ComposerJsonMergerTest
@@ -27,7 +27,7 @@ final class ComposerJsonMerger
     private $mergedPackagesCollector;
 
     /**
-     * @var AutoloadPathNormalizer
+     * @var \Symplify\MonorepoBuilder\Merge\PathResolver\ValueObject\AutoloadPathNormalizer
      */
     private $autoloadPathNormalizer;
 
@@ -52,7 +52,7 @@ final class ComposerJsonMerger
     }
 
     /**
-     * @param SmartFileInfo[] $composerPackageFileInfos
+     * @param \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $composerPackageFileInfos
      */
     public function mergeFileInfos(array $composerPackageFileInfos): ComposerJson
     {

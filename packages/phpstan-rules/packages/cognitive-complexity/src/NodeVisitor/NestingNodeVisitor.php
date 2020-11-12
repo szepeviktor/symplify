@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Symplify\PHPStanRules\CognitiveComplexity\NodeVisitor;
 
+use Symplify\PHPStanRules\CognitiveComplexity\NodeVisitor\ValueObject\AbstractComplexityNodeVisitor;
 use PhpParser\Node;
 use PhpParser\Node\Expr\Closure;
 use PhpParser\Node\Expr\Ternary;

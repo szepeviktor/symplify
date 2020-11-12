@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Tests\InterdependencyUpdater;
 
-use Symplify\MonorepoBuilder\DependencyUpdater;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\ValueObject\DependencyUpdater;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class InterdependencyUpdaterTest extends AbstractKernelTestCase
 {
     /**
-     * @var DependencyUpdater
+     * @var \Symplify\MonorepoBuilder\ValueObject\DependencyUpdater
      */
     private $dependencyUpdater;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

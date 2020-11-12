@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Tests\DevMasterAliasUpdater;
 
-use Symplify\MonorepoBuilder\DevMasterAliasUpdater;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\ValueObject\DevMasterAliasUpdater;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class DevMasterAliasUpdaterTest extends AbstractKernelTestCase
 {
     /**
-     * @var DevMasterAliasUpdater
+     * @var \Symplify\MonorepoBuilder\ValueObject\DevMasterAliasUpdater
      */
     private $devMasterAliasUpdater;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

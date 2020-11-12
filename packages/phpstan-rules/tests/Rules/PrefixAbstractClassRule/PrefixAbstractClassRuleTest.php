@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\PrefixAbstractClassRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\PrefixAbstractClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\PrefixAbstractClassRule;
 
 final class PrefixAbstractClassRuleTest extends AbstractServiceAwareRuleTestCase
 {

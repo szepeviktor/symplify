@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenFuncCallRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenFuncCallRule;
 
 final class ForbiddenFuncCallRuleTest extends AbstractServiceAwareRuleTestCase
 {

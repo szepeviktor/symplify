@@ -6,26 +6,26 @@ namespace Symplify\MonorepoBuilder\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\DevMasterAliasUpdater;
-use Symplify\MonorepoBuilder\Finder\PackageComposerFinder;
-use Symplify\MonorepoBuilder\Git\ExpectedAliasResolver;
+use Symplify\MonorepoBuilder\ValueObject\DevMasterAliasUpdater;
+use Symplify\MonorepoBuilder\Finder\ValueObject\PackageComposerFinder;
+use Symplify\MonorepoBuilder\Git\ValueObject\ExpectedAliasResolver;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class PackageAliasCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var PackageComposerFinder
+     * @var \Symplify\MonorepoBuilder\Finder\ValueObject\PackageComposerFinder
      */
     private $packageComposerFinder;
 
     /**
-     * @var DevMasterAliasUpdater
+     * @var \Symplify\MonorepoBuilder\ValueObject\DevMasterAliasUpdater
      */
     private $devMasterAliasUpdater;
 
     /**
-     * @var ExpectedAliasResolver
+     * @var \Symplify\MonorepoBuilder\Git\ValueObject\ExpectedAliasResolver
      */
     private $expectedAliasResolver;
 

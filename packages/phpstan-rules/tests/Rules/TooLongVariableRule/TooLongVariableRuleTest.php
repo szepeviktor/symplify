@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\TooLongVariableRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\TooLongVariableRule;
+use Symplify\PHPStanRules\Rules\ValueObject\TooLongVariableRule;
 
 final class TooLongVariableRuleTest extends AbstractServiceAwareRuleTestCase
 {

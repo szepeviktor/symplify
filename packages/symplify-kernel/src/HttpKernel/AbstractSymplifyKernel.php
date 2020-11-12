@@ -8,9 +8,9 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 use Symfony\Component\HttpKernel\Kernel;
 use Symplify\PackageBuilder\Contract\HttpKernel\ExtraConfigAwareKernelInterface;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Bundle\SymplifyKernelBundle;
-use Symplify\SymplifyKernel\Strings\KernelUniqueHasher;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\Bundle\ValueObject\SymplifyKernelBundle;
+use Symplify\SymplifyKernel\Strings\ValueObject\KernelUniqueHasher;
 
 abstract class AbstractSymplifyKernel extends Kernel implements ExtraConfigAwareKernelInterface
 {
@@ -38,7 +38,7 @@ abstract class AbstractSymplifyKernel extends Kernel implements ExtraConfigAware
     }
 
     /**
-     * @param string[]|SmartFileInfo[] $configs
+     * @param string[]|\Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $configs
      */
     public function setConfigs(array $configs): void
     {

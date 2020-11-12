@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Symplify\EasyTesting\ValueObject;
 
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
 
 final class ExpectedAndOutputFileInfoPair
 {
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $expectedFileInfo;
 
     /**
-     * @var SmartFileInfo|null
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo|null
      */
     private $outputFileInfo;
 

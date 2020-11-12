@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\Tests\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
 
 use Iterator;
-use Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
+use Symplify\CodingStandard\Fixer\ArrayNotation\ValueObject\StandaloneLineInMultilineArrayFixer;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class StandaloneLineInMultilineArrayFixerTest extends AbstractCheckerTestCase
 {

@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Symplify\EasyHydrator\Tests;
 
-use Symplify\EasyHydrator\ArrayToValueObjectHydrator;
-use Symplify\EasyHydrator\Exception\MissingConstructorException;
+use Symplify\EasyHydrator\ValueObject\ArrayToValueObjectHydrator;
+use Symplify\EasyHydrator\ValueObject\MissingConstructorException;
 use Symplify\EasyHydrator\Tests\Fixture\NoConstructor;
-use Symplify\EasyHydrator\Tests\HttpKernel\EasyHydratorTestKernel;
+use Symplify\EasyHydrator\Tests\HttpKernel\ValueObject\EasyHydratorTestKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class MissingConstructorTest extends AbstractKernelTestCase
 {
     /**
-     * @var ArrayToValueObjectHydrator
+     * @var \Symplify\EasyHydrator\ValueObject\ArrayToValueObjectHydrator
      */
     private $arrayToValueObjectHydrator;
 

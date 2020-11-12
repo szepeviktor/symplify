@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckRequiredAbstractKeywordForClass
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckRequiredAbstractKeywordForClassNameStartWithAbstractRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckRequiredAbstractKeywordForClassNameStartWithAbstractRule;
 
 final class CheckRequiredAbstractKeywordForClassNameStartWithAbstractRuleTest extends AbstractServiceAwareRuleTestCase
 {

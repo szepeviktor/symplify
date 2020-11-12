@@ -8,8 +8,8 @@ use Symfony\Component\Finder\Finder;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\MonorepoBuilder\Merge\ComposerJsonMerger;
 use Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\AbstractComposerJsonDecoratorTest;
-use Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 abstract class AbstractMergeTestCase extends AbstractComposerJsonDecoratorTest
 {
@@ -19,7 +19,7 @@ abstract class AbstractMergeTestCase extends AbstractComposerJsonDecoratorTest
     private $composerJsonMerger;
 
     /**
-     * @var FinderSanitizer
+     * @var \Symplify\SmartFileSystem\Finder\ValueObject\FinderSanitizer
      */
     private $finderSanitizer;
 
@@ -42,7 +42,7 @@ abstract class AbstractMergeTestCase extends AbstractComposerJsonDecoratorTest
     }
 
     /**
-     * @return SmartFileInfo[]
+     * @return \Symplify\SmartFileSystem\ValueObject\SmartFileInfo[]
      */
     private function getFileInfosFromDirectory(string $directory): array
     {

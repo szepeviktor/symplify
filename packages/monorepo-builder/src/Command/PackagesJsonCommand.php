@@ -8,9 +8,9 @@ use Nette\Utils\Json;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\Json\PackageJsonProvider;
+use Symplify\MonorepoBuilder\Json\ValueObject\PackageJsonProvider;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class PackagesJsonCommand extends AbstractSymplifyCommand
 {
@@ -20,7 +20,7 @@ final class PackagesJsonCommand extends AbstractSymplifyCommand
     private const NAMES = 'names';
 
     /**
-     * @var PackageJsonProvider
+     * @var \Symplify\MonorepoBuilder\Json\ValueObject\PackageJsonProvider
      */
     private $packageJsonProvider;
 

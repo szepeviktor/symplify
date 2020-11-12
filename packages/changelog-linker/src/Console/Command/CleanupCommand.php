@@ -9,7 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\ChangelogLinker\ChangelogCleaner;
 use Symplify\ChangelogLinker\FileSystem\ChangelogFileSystem;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class CleanupCommand extends AbstractSymplifyCommand
 {

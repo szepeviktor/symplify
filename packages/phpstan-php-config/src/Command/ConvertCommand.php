@@ -9,17 +9,17 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\PHPStanPHPConfig\Neon\NeonFilePrinter;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\PHPStanPHPConfig\Neon\ValueObject\NeonFilePrinter;
 use Symplify\PHPStanPHPConfig\PHPStanPHPToNeonConverter;
 use Symplify\PHPStanPHPConfig\ValueObject\Option;
-use Symplify\SmartFileSystem\FileSystemGuard;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ConvertCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var FileSystemGuard
+     * @var \Symplify\SmartFileSystem\ValueObject\FileSystemGuard
      */
     private $fileSystemGuard;
 
@@ -29,7 +29,7 @@ final class ConvertCommand extends AbstractSymplifyCommand
     private $phpStanPHPToNeonConverter;
 
     /**
-     * @var NeonFilePrinter
+     * @var \Symplify\PHPStanPHPConfig\Neon\ValueObject\NeonFilePrinter
      */
     private $neonFilePrinter;
 

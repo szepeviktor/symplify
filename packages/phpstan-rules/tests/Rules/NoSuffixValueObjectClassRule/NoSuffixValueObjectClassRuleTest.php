@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoSuffixValueObjectClassRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoSuffixValueObjectClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoSuffixValueObjectClassRule;
 
 final class NoSuffixValueObjectClassRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -6,16 +6,16 @@ namespace Symplify\Skipper\Tests\Skipper\Only;
 
 use Iterator;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\Skipper\HttpKernel\SkipperKernel;
-use Symplify\Skipper\Skipper\Skipper;
+use Symplify\Skipper\HttpKernel\ValueObject\SkipperKernel;
+use Symplify\Skipper\Skipper\ValueObject\Skipper;
 use Symplify\Skipper\Tests\Skipper\Only\Source\IncludeThisClass;
 use Symplify\Skipper\Tests\Skipper\Only\Source\SkipThisClass;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class SkipperOnlyTest extends AbstractKernelTestCase
 {
     /**
-     * @var Skipper
+     * @var \Symplify\Skipper\Skipper\ValueObject\Skipper
      */
     private $skipper;
 

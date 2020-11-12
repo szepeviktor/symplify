@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Symplify\ChangelogLinker\FileSystem;
 
+use Symplify\ChangelogLinker\FileSystem\ValueObject\ChangelogPlaceholderGuard;
 use Nette\Utils\Strings;
 use Symplify\ChangelogLinker\ChangelogLinker;
-use Symplify\ChangelogLinker\Configuration\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
-use Symplify\SmartFileSystem\FileSystemGuard;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\ChangelogLinker\Configuration\ValueObject\Option;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 /**
  * @see \Symplify\ChangelogLinker\Tests\FileSystem\ChangelogFileSystem\ChangelogFileSystemTest
@@ -22,22 +23,22 @@ final class ChangelogFileSystem
     private $changelogLinker;
 
     /**
-     * @var ChangelogPlaceholderGuard
+     * @var \Symplify\ChangelogLinker\FileSystem\ValueObject\ChangelogPlaceholderGuard
      */
     private $changelogPlaceholderGuard;
 
     /**
-     * @var ParameterProvider
+     * @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider
      */
     private $parameterProvider;
 
     /**
-     * @var FileSystemGuard
+     * @var \Symplify\SmartFileSystem\ValueObject\FileSystemGuard
      */
     private $fileSystemGuard;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

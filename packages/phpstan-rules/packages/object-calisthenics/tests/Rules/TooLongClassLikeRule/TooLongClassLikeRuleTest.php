@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\TooLongClassLikeR
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\TooLongClassLikeRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\TooLongClassLikeRule;
 
 final class TooLongClassLikeRuleTest extends AbstractServiceAwareRuleTestCase
 {

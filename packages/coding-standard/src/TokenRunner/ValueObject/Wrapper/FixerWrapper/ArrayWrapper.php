@@ -7,7 +7,7 @@ namespace Symplify\CodingStandard\TokenRunner\ValueObject\Wrapper\FixerWrapper;
 use PhpCsFixer\Tokenizer\CT;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
-use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\TokenSkipper;
+use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\TokenSkipper;
 use Symplify\CodingStandard\TokenRunner\ValueObject\BlockInfo;
 
 final class ArrayWrapper
@@ -23,7 +23,7 @@ final class ArrayWrapper
     private $tokens;
 
     /**
-     * @var TokenSkipper
+     * @var \Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\TokenSkipper
      */
     private $tokenSkipper;
 

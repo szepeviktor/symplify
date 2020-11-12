@@ -7,16 +7,16 @@ namespace Symplify\SetConfigResolver\Tests\ConfigResolver;
 use Iterator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
-use Symplify\SetConfigResolver\Exception\SetNotFoundException;
-use Symplify\SetConfigResolver\SetAwareConfigResolver;
+use Symplify\SetConfigResolver\ValueObject\SetNotFoundException;
+use Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver;
 use Symplify\SetConfigResolver\Tests\ConfigResolver\Source\DummySetProvider;
-use Symplify\SmartFileSystem\Exception\FileNotFoundException;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\FileNotFoundException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class SetAwareConfigResolverTest extends TestCase
 {
     /**
-     * @var SetAwareConfigResolver
+     * @var \Symplify\SetConfigResolver\ValueObject\SetAwareConfigResolver
      */
     private $setAwareConfigResolver;
 

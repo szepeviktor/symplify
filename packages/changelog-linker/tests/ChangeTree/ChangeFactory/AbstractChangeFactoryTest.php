@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\Tests\ChangeTree\ChangeFactory;
 
 use Symplify\ChangelogLinker\ChangeTree\ChangeFactory;
-use Symplify\ChangelogLinker\HttpKernel\ChangelogLinkerKernel;
+use Symplify\ChangelogLinker\HttpKernel\ValueObject\ChangelogLinkerKernel;
 use Symplify\ChangelogLinker\ValueObject\ChangeTree\Change;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 

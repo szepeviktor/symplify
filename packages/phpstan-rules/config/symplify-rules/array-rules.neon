@@ -1,24 +1,24 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\NoArrayStringObjectReturnRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoArrayStringObjectReturnRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoMultiArrayAssignRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoMultiArrayAssignRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoReturnArrayVariableListRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoReturnArrayVariableListRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenArrayDestructRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenArrayDestructRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenArrayWithStringKeysRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenArrayWithStringKeysRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenComplexArrayConfigInSetRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenComplexArrayConfigInSetRule
         tags: [phpstan.rules.rule]

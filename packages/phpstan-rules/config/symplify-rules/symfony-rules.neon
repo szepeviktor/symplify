@@ -1,12 +1,12 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\CheckRequiredAbstractKeywordForClassNameStartWithAbstractRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\CheckRequiredAbstractKeywordForClassNameStartWithAbstractRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\NoTraitExceptRequiredAutowireRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoTraitExceptRequiredAutowireRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\CheckRequiredMethodNamingRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\CheckRequiredMethodNamingRule
         tags: [phpstan.rules.rule]

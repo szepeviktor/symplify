@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Release\Tests\ReleaseWorkerProvider;
 
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Release\ReleaseWorkerProvider;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Release\ValueObject\ReleaseWorkerProvider;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class ReleaseWorkerProviderTest extends AbstractKernelTestCase
 {
     /**
-     * @var ReleaseWorkerProvider
+     * @var \Symplify\MonorepoBuilder\Release\ValueObject\ReleaseWorkerProvider
      */
     private $releaseWorkerProvider;
 

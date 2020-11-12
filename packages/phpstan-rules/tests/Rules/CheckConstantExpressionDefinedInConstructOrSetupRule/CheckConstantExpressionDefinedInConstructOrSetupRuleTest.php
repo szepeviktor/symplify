@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckConstantExpressionDefinedInCons
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckConstantExpressionDefinedInConstructOrSetupRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckConstantExpressionDefinedInConstructOrSetupRule;
 
 final class CheckConstantExpressionDefinedInConstructOrSetupRuleTest extends AbstractServiceAwareRuleTestCase
 {

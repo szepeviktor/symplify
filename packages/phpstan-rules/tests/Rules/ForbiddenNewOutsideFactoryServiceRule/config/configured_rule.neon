@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenNewOutsideFactoryServiceRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenNewOutsideFactoryServiceRule
         tags: [phpstan.rules.rule]
         arguments:
             types:

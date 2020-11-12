@@ -6,7 +6,7 @@ namespace Symplify\MonorepoBuilder\Merge\Tests\Application;
 
 use Symplify\MonorepoBuilder\Merge\Application\MergedAndDecoratedComposerJsonFactory;
 use Symplify\MonorepoBuilder\Merge\Tests\ComposerJsonDecorator\AbstractComposerJsonDecoratorTest;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class MergedAndDecoratedComposerJsonFactoryTest extends AbstractComposerJsonDecoratorTest
 {

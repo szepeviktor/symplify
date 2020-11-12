@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 use PhpCsFixer\Tokenizer\Analyzer\FunctionsAnalyzer;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\EasyCodingStandard\ChangedFilesDetector\ChangedFilesDetector;
-use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\ChangedFilesDetector;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();

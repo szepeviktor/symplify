@@ -9,7 +9,7 @@ use Iterator;
 use Nette\Utils\DateTime;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\PreferredClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\PreferredClassRule;
 
 final class PreferredClassRuleTest extends AbstractServiceAwareRuleTestCase
 {
@@ -24,7 +24,7 @@ final class PreferredClassRuleTest extends AbstractServiceAwareRuleTestCase
 
     public function provideData(): Iterator
     {
-        $errorMessage = sprintf(PreferredClassRule::ERROR_MESSAGE, NativeDateTime::class, DateTime::class);
+        $errorMessage = sprintf(\Symplify\PHPStanRules\Rules\ValueObject\PreferredClassRule::ERROR_MESSAGE, NativeDateTime::class, DateTime::class);
         yield [__DIR__ . '/Fixture/ClassUsingOld.php', [[$errorMessage, 13]]];
         yield [__DIR__ . '/Fixture/ClassExtendingOld.php', [[$errorMessage, 9]]];
         yield [__DIR__ . '/Fixture/ClassMethodParameterUsingOld.php', [[$errorMessage, 11]]];
@@ -36,6 +36,6 @@ final class PreferredClassRuleTest extends AbstractServiceAwareRuleTestCase
 
     protected function getRule(): Rule
     {
-        return $this->getRuleFromConfig(PreferredClassRule::class, __DIR__ . '/config/configured_rule.neon');
+        return $this->getRuleFromConfig(\Symplify\PHPStanRules\Rules\ValueObject\PreferredClassRule::class, __DIR__ . '/config/configured_rule.neon');
     }
 }

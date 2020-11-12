@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenSpreadOperatorRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenSpreadOperatorRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenSpreadOperatorRule;
 
 final class ForbiddenSpreadOperatorRuleTest extends AbstractServiceAwareRuleTestCase
 {

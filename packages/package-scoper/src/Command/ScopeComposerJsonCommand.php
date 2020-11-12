@@ -8,17 +8,17 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
-use Symplify\ComposerJsonManipulator\Printer\ComposerJsonPrinter;
+use Symplify\ComposerJsonManipulator\Printer\ValueObject\ComposerJsonPrinter;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 use Symplify\PackageScoper\ComposerJson\ScopedComposerJsonFactory;
 use Symplify\PackageScoper\ValueObject\Option;
-use Symplify\SmartFileSystem\FileSystemGuard;
+use Symplify\SmartFileSystem\ValueObject\FileSystemGuard;
 
 final class ScopeComposerJsonCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var FileSystemGuard
+     * @var \Symplify\SmartFileSystem\ValueObject\FileSystemGuard
      */
     private $fileSystemGuard;
 
@@ -33,7 +33,7 @@ final class ScopeComposerJsonCommand extends AbstractSymplifyCommand
     private $scopedComposerJsonFactory;
 
     /**
-     * @var ComposerJsonPrinter
+     * @var \Symplify\ComposerJsonManipulator\Printer\ValueObject\ComposerJsonPrinter
      */
     private $composerJsonPrinter;
 

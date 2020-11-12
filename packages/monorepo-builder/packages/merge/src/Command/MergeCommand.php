@@ -7,18 +7,18 @@ namespace Symplify\MonorepoBuilder\Merge\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
-use Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use Symplify\MonorepoBuilder\FileSystem\ComposerJsonProvider;
+use Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager;
+use Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider;
 use Symplify\MonorepoBuilder\Merge\Application\MergedAndDecoratedComposerJsonFactory;
-use Symplify\MonorepoBuilder\Merge\Guard\ConflictingVersionsGuard;
-use Symplify\MonorepoBuilder\Validator\SourcesPresenceValidator;
+use Symplify\MonorepoBuilder\Merge\Guard\ValueObject\ConflictingVersionsGuard;
+use Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class MergeCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var ComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider
      */
     private $composerJsonProvider;
 
@@ -28,7 +28,7 @@ final class MergeCommand extends AbstractSymplifyCommand
     private $composerJsonFactory;
 
     /**
-     * @var JsonFileManager
+     * @var \Symplify\ComposerJsonManipulator\FileSystem\ValueObject\JsonFileManager
      */
     private $jsonFileManager;
 
@@ -38,12 +38,12 @@ final class MergeCommand extends AbstractSymplifyCommand
     private $mergedAndDecoratedComposerJsonFactory;
 
     /**
-     * @var SourcesPresenceValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator
      */
     private $sourcesPresenceValidator;
 
     /**
-     * @var ConflictingVersionsGuard
+     * @var \Symplify\MonorepoBuilder\Merge\Guard\ValueObject\ConflictingVersionsGuard
      */
     private $conflictingVersionsGuard;
 

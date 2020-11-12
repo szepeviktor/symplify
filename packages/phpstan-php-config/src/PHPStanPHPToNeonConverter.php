@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Symplify\PHPStanPHPConfig;
 
-use Symplify\PackageBuilder\Neon\NeonPrinter;
-use Symplify\PHPStanPHPConfig\CaseConverter\ParameterConverter;
-use Symplify\PHPStanPHPConfig\CaseConverter\ServicesConverter;
+use Symplify\PackageBuilder\Neon\ValueObject\NeonPrinter;
+use Symplify\PHPStanPHPConfig\CaseConverter\ValueObject\ParameterConverter;
+use Symplify\PHPStanPHPConfig\CaseConverter\ValueObject\ServicesConverter;
 use Symplify\PHPStanPHPConfig\ContainerBuilderFactory\SymfonyContainerBuilderFactory;
 use Symplify\PHPStanPHPConfig\DataCollector\ImportsDataCollector;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\PHPStanPHPConfig\Tests\PHPStanPHPToNeonConverter\PHPStanPHPToNeonConverterTest
@@ -27,17 +27,17 @@ final class PHPStanPHPToNeonConverter
     private $importsDataCollector;
 
     /**
-     * @var NeonPrinter
+     * @var \Symplify\PackageBuilder\Neon\ValueObject\NeonPrinter
      */
     private $neonPrinter;
 
     /**
-     * @var ParameterConverter
+     * @var \Symplify\PHPStanPHPConfig\CaseConverter\ValueObject\ParameterConverter
      */
     private $parameterConverter;
 
     /**
-     * @var ServicesConverter
+     * @var \Symplify\PHPStanPHPConfig\CaseConverter\ValueObject\ServicesConverter
      */
     private $servicesConverter;
 

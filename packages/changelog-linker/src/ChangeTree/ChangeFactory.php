@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\ChangeTree;
 
 use Nette\Utils\Strings;
-use Symplify\ChangelogLinker\ChangeTree\Resolver\CategoryResolver;
-use Symplify\ChangelogLinker\ChangeTree\Resolver\PackageResolver;
-use Symplify\ChangelogLinker\Git\GitCommitDateTagResolver;
+use Symplify\ChangelogLinker\ChangeTree\Resolver\ValueObject\CategoryResolver;
+use Symplify\ChangelogLinker\ChangeTree\Resolver\ValueObject\PackageResolver;
+use Symplify\ChangelogLinker\Git\ValueObject\GitCommitDateTagResolver;
 use Symplify\ChangelogLinker\ValueObject\ChangeTree\Change;
 use Symplify\ChangelogLinker\ValueObject\Option;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 
 /**
  * @see \Symplify\ChangelogLinker\Tests\ChangeTree\ChangeFactory\ChangeFactoryTest
@@ -29,17 +29,17 @@ final class ChangeFactory
     private $authorsToIgnore = [];
 
     /**
-     * @var GitCommitDateTagResolver
+     * @var \Symplify\ChangelogLinker\Git\ValueObject\GitCommitDateTagResolver
      */
     private $gitCommitDateTagResolver;
 
     /**
-     * @var CategoryResolver
+     * @var \Symplify\ChangelogLinker\ChangeTree\Resolver\ValueObject\CategoryResolver
      */
     private $categoryResolver;
 
     /**
-     * @var PackageResolver
+     * @var \Symplify\ChangelogLinker\ChangeTree\Resolver\ValueObject\PackageResolver
      */
     private $packageResolver;
 

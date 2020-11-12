@@ -6,15 +6,15 @@ namespace Symplify\ChangelogLinker\Tests\Analyzer\IdsAnalyzer;
 
 use Iterator;
 use PHPUnit\Framework\TestCase;
-use Symplify\ChangelogLinker\Analyzer\IdsAnalyzer;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
+use Symplify\ChangelogLinker\Analyzer\ValueObject\IdsAnalyzer;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class IdsAnalyzerTest extends TestCase
 {
     /**
-     * @var IdsAnalyzer
+     * @var \Symplify\ChangelogLinker\Analyzer\ValueObject\IdsAnalyzer
      */
     private $idsAnalyzer;
 

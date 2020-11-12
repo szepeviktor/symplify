@@ -9,7 +9,7 @@ use PHPStan\DependencyInjection\Container;
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
 use Symplify\PHPStanExtensions\DependencyInjection\PHPStanContainerFactory;
-use Symplify\PHPStanExtensions\Exception\SwappedArgumentsException;
+use Symplify\PHPStanExtensions\ValueObject\SwappedArgumentsException;
 
 abstract class AbstractServiceAwareRuleTestCase extends RuleTestCase
 {

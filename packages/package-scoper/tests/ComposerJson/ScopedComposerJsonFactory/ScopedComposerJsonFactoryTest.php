@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\PackageScoper\Tests\ComposerJson\ScopedComposerJsonFactory;
 
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
-use Symplify\ComposerJsonManipulator\Printer\ComposerJsonPrinter;
+use Symplify\ComposerJsonManipulator\Printer\ValueObject\ComposerJsonPrinter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\PackageScoper\ComposerJson\ScopedComposerJsonFactory;
-use Symplify\PackageScoper\HttpKernel\PackageScoperKernel;
+use Symplify\PackageScoper\HttpKernel\ValueObject\PackageScoperKernel;
 
 final class ScopedComposerJsonFactoryTest extends AbstractKernelTestCase
 {
@@ -23,7 +23,7 @@ final class ScopedComposerJsonFactoryTest extends AbstractKernelTestCase
     private $composerJsonFactory;
 
     /**
-     * @var ComposerJsonPrinter
+     * @var \Symplify\ComposerJsonManipulator\Printer\ValueObject\ComposerJsonPrinter
      */
     private $composerJsonPrinter;
 

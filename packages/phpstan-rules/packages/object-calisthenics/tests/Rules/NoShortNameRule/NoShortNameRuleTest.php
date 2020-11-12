@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\NoShortNameRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\NoShortNameRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\NoShortNameRule;
 
 final class NoShortNameRuleTest extends AbstractServiceAwareRuleTestCase
 {

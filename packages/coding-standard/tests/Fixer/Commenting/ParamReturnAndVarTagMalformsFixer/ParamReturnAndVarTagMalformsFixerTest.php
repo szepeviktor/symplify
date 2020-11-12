@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\Tests\Fixer\Commenting\ParamReturnAndVarTagMalformsFixer;
 
 use Iterator;
-use Symplify\CodingStandard\Fixer\Commenting\ParamReturnAndVarTagMalformsFixer;
+use Symplify\CodingStandard\Fixer\Commenting\ValueObject\ParamReturnAndVarTagMalformsFixer;
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @mimic https://github.com/rectorphp/rector/pull/807/files

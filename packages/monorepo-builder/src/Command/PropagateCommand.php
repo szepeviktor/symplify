@@ -6,34 +6,34 @@ namespace Symplify\MonorepoBuilder\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\DependencyUpdater;
-use Symplify\MonorepoBuilder\FileSystem\ComposerJsonProvider;
+use Symplify\MonorepoBuilder\ValueObject\DependencyUpdater;
+use Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider;
 use Symplify\MonorepoBuilder\ValueObject\File;
-use Symplify\MonorepoBuilder\VersionPropagator;
-use Symplify\MonorepoBuilder\VersionValidator;
+use Symplify\MonorepoBuilder\ValueObject\VersionPropagator;
+use Symplify\MonorepoBuilder\ValueObject\VersionValidator;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class PropagateCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var VersionValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\VersionValidator
      */
     private $versionValidator;
 
     /**
-     * @var ComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider
      */
     private $composerJsonProvider;
 
     /**
-     * @var DependencyUpdater
+     * @var \Symplify\MonorepoBuilder\ValueObject\DependencyUpdater
      */
     private $dependencyUpdater;
 
     /**
-     * @var VersionPropagator
+     * @var \Symplify\MonorepoBuilder\ValueObject\VersionPropagator
      */
     private $versionPropagator;
 

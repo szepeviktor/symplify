@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Symplify\ChangelogLinker\Tests\ChangelogDumper;
 
 use Iterator;
-use Symplify\ChangelogLinker\ChangelogDumper;
-use Symplify\ChangelogLinker\HttpKernel\ChangelogLinkerKernel;
+use Symplify\ChangelogLinker\ValueObject\ChangelogDumper;
+use Symplify\ChangelogLinker\HttpKernel\ValueObject\ChangelogLinkerKernel;
 use Symplify\ChangelogLinker\ValueObject\ChangeTree\Change;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
@@ -18,7 +18,7 @@ final class WithTagsTest extends AbstractKernelTestCase
     private $changes = [];
 
     /**
-     * @var ChangelogDumper
+     * @var \Symplify\ChangelogLinker\ValueObject\ChangelogDumper
      */
     private $changelogDumper;
 

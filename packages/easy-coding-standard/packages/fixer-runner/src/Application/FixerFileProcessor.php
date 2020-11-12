@@ -12,14 +12,14 @@ use PhpCsFixer\Fixer\Strict\DeclareStrictTypesFixer;
 use PhpCsFixer\Fixer\Whitespace\SingleBlankLineAtEofFixer;
 use PhpCsFixer\Tokenizer\Tokens;
 use Symplify\EasyCodingStandard\Application\AbstractFileProcessor;
-use Symplify\EasyCodingStandard\Configuration\Configuration;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
-use Symplify\EasyCodingStandard\FixerRunner\Exception\Application\FixerFailedException;
-use Symplify\EasyCodingStandard\FixerRunner\Parser\FileToTokensParser;
-use Symplify\Skipper\Skipper\Skipper;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\EasyCodingStandard\FixerRunner\ValueObject\Application\FixerFailedException;
+use Symplify\EasyCodingStandard\FixerRunner\Parser\ValueObject\FileToTokensParser;
+use Symplify\Skipper\Skipper\ValueObject\Skipper;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 use Throwable;
 
 /**
@@ -43,17 +43,17 @@ final class FixerFileProcessor extends AbstractFileProcessor
     private $errorAndDiffCollector;
 
     /**
-     * @var Skipper
+     * @var \Symplify\Skipper\Skipper\ValueObject\Skipper
      */
     private $skipper;
 
     /**
-     * @var Configuration
+     * @var \Symplify\EasyCodingStandard\Configuration\ValueObject\Configuration
      */
     private $configuration;
 
     /**
-     * @var FileToTokensParser
+     * @var \Symplify\EasyCodingStandard\FixerRunner\Parser\ValueObject\FileToTokensParser
      */
     private $fileToTokensParser;
 
@@ -63,12 +63,12 @@ final class FixerFileProcessor extends AbstractFileProcessor
     private $differ;
 
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     private $easyCodingStandardStyle;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

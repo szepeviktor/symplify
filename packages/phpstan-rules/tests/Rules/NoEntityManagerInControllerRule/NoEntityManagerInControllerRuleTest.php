@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoEntityManagerInControllerRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoEntityManagerInControllerRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoEntityManagerInControllerRule;
 
 final class NoEntityManagerInControllerRuleTest extends AbstractServiceAwareRuleTestCase
 {

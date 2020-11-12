@@ -9,15 +9,15 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
-use Symplify\RuleDocGenerator\DirectoryToMarkdownPrinter;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
+use Symplify\RuleDocGenerator\ValueObject\DirectoryToMarkdownPrinter;
 use Symplify\RuleDocGenerator\ValueObject\Option;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class GenerateCommand extends AbstractSymplifyCommand
 {
     /**
-     * @var DirectoryToMarkdownPrinter
+     * @var \Symplify\RuleDocGenerator\ValueObject\DirectoryToMarkdownPrinter
      */
     private $directoryToMarkdownPrinter;
 

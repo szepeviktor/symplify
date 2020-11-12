@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\ComposerJsonManipulator\Tests\Sorter;
 
 use Iterator;
-use Symplify\ComposerJsonManipulator\Sorter\ComposerPackageSorter;
-use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ComposerJsonManipulatorKernel;
+use Symplify\ComposerJsonManipulator\Sorter\ValueObject\ComposerPackageSorter;
+use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ValueObject\ComposerJsonManipulatorKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class ComposerPackageSorterTest extends AbstractKernelTestCase
 {
     /**
-     * @var ComposerPackageSorter
+     * @var \Symplify\ComposerJsonManipulator\Sorter\ValueObject\ComposerPackageSorter
      */
     private $composerPackageSorter;
 

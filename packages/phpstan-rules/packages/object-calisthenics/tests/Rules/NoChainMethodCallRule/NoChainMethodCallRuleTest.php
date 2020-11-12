@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\NoChainMethodCall
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\NoChainMethodCallRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\NoChainMethodCallRule;
 
 final class NoChainMethodCallRuleTest extends AbstractServiceAwareRuleTestCase
 {

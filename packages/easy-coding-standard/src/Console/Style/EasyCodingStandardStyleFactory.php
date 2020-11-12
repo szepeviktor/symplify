@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Console\Style;
 
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Terminal;
-use Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
-use Symplify\PackageBuilder\Reflection\PrivatesCaller;
+use Symplify\EasyTesting\PHPUnit\ValueObject\StaticPHPUnitEnvironment;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller;
 
 final class EasyCodingStandardStyleFactory
 {
     /**
-     * @var PrivatesCaller
+     * @var \Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller
      */
     private $privatesCaller;
 

@@ -13,9 +13,9 @@ use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Contracts\Service\ResetInterface;
 use Symplify\PackageBuilder\Contract\HttpKernel\ExtraConfigAwareKernelInterface;
-use Symplify\PackageBuilder\Exception\HttpKernel\MissingInterfaceException;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\PackageBuilder\ValueObject\HttpKernel\MissingInterfaceException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
 
 /**
  * Inspiration
@@ -34,7 +34,7 @@ abstract class AbstractKernelTestCase extends TestCase
     protected static $container;
 
     /**
-     * @param string[]|SmartFileInfo[] $configs
+     * @param string[]|\Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $configs
      */
     protected function bootKernelWithConfigs(string $kernelClass, array $configs): KernelInterface
     {
@@ -149,7 +149,7 @@ abstract class AbstractKernelTestCase extends TestCase
     }
 
     /**
-     * @param string[]|SmartFileInfo[] $configs
+     * @param string[]|\Symplify\SmartFileSystem\ValueObject\SmartFileInfo[] $configs
      * @return string[]
      */
     private function resolveConfigFilePaths(array $configs): array

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\ObjectCalisthenics\Tests\Rules\TooLongFunctionLi
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\ObjectCalisthenics\Rules\TooLongFunctionLikeRule;
+use Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\TooLongFunctionLikeRule;
 
 final class TooLongFunctionLikeRuleTest extends AbstractServiceAwareRuleTestCase
 {

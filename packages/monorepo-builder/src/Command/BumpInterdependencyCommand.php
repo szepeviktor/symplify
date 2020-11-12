@@ -7,11 +7,11 @@ namespace Symplify\MonorepoBuilder\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\MonorepoBuilder\DependencyUpdater;
-use Symplify\MonorepoBuilder\FileSystem\ComposerJsonProvider;
-use Symplify\MonorepoBuilder\Validator\SourcesPresenceValidator;
+use Symplify\MonorepoBuilder\ValueObject\DependencyUpdater;
+use Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider;
+use Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
-use Symplify\PackageBuilder\Console\ShellCode;
+use Symplify\PackageBuilder\Console\ValueObject\ShellCode;
 
 final class BumpInterdependencyCommand extends AbstractSymplifyCommand
 {
@@ -21,17 +21,17 @@ final class BumpInterdependencyCommand extends AbstractSymplifyCommand
     private const VERSION_ARGUMENT = 'version';
 
     /**
-     * @var DependencyUpdater
+     * @var \Symplify\MonorepoBuilder\ValueObject\DependencyUpdater
      */
     private $dependencyUpdater;
 
     /**
-     * @var ComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\FileSystem\ValueObject\ComposerJsonProvider
      */
     private $composerJsonProvider;
 
     /**
-     * @var SourcesPresenceValidator
+     * @var \Symplify\MonorepoBuilder\ValueObject\SourcesPresenceValidator
      */
     private $sourcesPresenceValidator;
 

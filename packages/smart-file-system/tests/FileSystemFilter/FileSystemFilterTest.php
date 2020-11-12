@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Symplify\SmartFileSystem\Tests\FileSystemFilter;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\SmartFileSystem\FileSystemFilter;
+use Symplify\SmartFileSystem\ValueObject\FileSystemFilter;
 
 final class FileSystemFilterTest extends TestCase
 {
     /**
-     * @var FileSystemFilter
+     * @var \Symplify\SmartFileSystem\ValueObject\FileSystemFilter
      */
     private $fileSystemFilter;
 

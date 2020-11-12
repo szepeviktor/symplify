@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\PreferredRawDataInTestDataProviderRu
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\PreferredRawDataInTestDataProviderRule;
+use Symplify\PHPStanRules\Rules\ValueObject\PreferredRawDataInTestDataProviderRule;
 
 final class PreferredRawDataInTestDataProviderRuleTest extends AbstractServiceAwareRuleTestCase
 {

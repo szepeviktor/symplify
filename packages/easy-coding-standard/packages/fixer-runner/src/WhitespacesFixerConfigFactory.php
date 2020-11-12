@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\EasyCodingStandard\FixerRunner;
 
 use PhpCsFixer\WhitespacesFixerConfig;
-use Symplify\EasyCodingStandard\Exception\Configuration\WhitespaceConfigurationException;
+use Symplify\EasyCodingStandard\ValueObject\Configuration\WhitespaceConfigurationException;
 use Symplify\EasyCodingStandard\FixerRunner\ValueObject\Spacing;
-use Symplify\PackageBuilder\Parameter\ParameterProvider;
+use Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider;
 
 final class WhitespacesFixerConfigFactory
 {
     /**
-     * @var ParameterProvider
+     * @var \Symplify\PackageBuilder\Parameter\ValueObject\ParameterProvider
      */
     private $parameterProvider;
 

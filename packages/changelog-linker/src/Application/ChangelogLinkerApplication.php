@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace Symplify\ChangelogLinker\Application;
 
-use Symplify\ChangelogLinker\ChangelogDumper;
+use Symplify\ChangelogLinker\ValueObject\ChangelogDumper;
 use Symplify\ChangelogLinker\ChangelogLinker;
-use Symplify\ChangelogLinker\ChangeTree\ChangeResolver;
+use Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeResolver;
 
 final class ChangelogLinkerApplication
 {
     /**
-     * @var ChangeResolver
+     * @var \Symplify\ChangelogLinker\ChangeTree\ValueObject\ChangeResolver
      */
     private $changeResolver;
 
     /**
-     * @var ChangelogDumper
+     * @var \Symplify\ChangelogLinker\ValueObject\ChangelogDumper
      */
     private $changelogDumper;
 

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\CheckConstantStringValueFormatRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\CheckConstantStringValueFormatRule;
+use Symplify\PHPStanRules\Rules\ValueObject\CheckConstantStringValueFormatRule;
 
 final class CheckConstantStringValueFormatRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -7,8 +7,8 @@ namespace Symplify\EasyCodingStandard\Set;
 use Nette\Utils\Strings;
 use ReflectionClass;
 use Symplify\SetConfigResolver\ValueObject\Set;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
 
 final class ConstantReflectionSetFactory
 {

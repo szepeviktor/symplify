@@ -4,14 +4,15 @@ declare(strict_types=1);
 
 namespace Symplify\CodingStandard\Fixer;
 
+use Symplify\CodingStandard\Fixer\ValueObject\AbstractSymplifyFixer;
 use PhpCsFixer\Tokenizer\CT;
 use PhpCsFixer\Tokenizer\Tokens;
 use PhpCsFixer\WhitespacesFixerConfig;
 use SplFileInfo;
 use Symplify\CodingStandard\Contract\ArrayFixerInterface;
-use Symplify\CodingStandard\Fixer\LineLength\LineLengthFixer;
-use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ArrayAnalyzer;
-use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\BlockFinder;
+use Symplify\CodingStandard\Fixer\LineLength\ValueObject\LineLengthFixer;
+use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\ArrayAnalyzer;
+use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\BlockFinder;
 
 abstract class AbstractArrayFixer extends AbstractSymplifyFixer implements ArrayFixerInterface
 {
@@ -26,12 +27,12 @@ abstract class AbstractArrayFixer extends AbstractSymplifyFixer implements Array
     protected $whitespacesFixerConfig;
 
     /**
-     * @var ArrayAnalyzer
+     * @var \Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\ArrayAnalyzer
      */
     protected $arrayAnalyzer;
 
     /**
-     * @var BlockFinder
+     * @var \Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\BlockFinder
      */
     private $blockFinder;
 

@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\NoShortNameRule
+        class: Symplify\PHPStanRules\ObjectCalisthenics\Rules\ValueObject\NoShortNameRule
         tags: [phpstan.rules.rule]
         arguments:
             minNameLength: 3

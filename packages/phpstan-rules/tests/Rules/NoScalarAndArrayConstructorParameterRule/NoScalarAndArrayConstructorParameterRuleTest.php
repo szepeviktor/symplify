@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoScalarAndArrayConstructorParameter
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoScalarAndArrayConstructorParameterRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoScalarAndArrayConstructorParameterRule;
 
 final class NoScalarAndArrayConstructorParameterRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -12,11 +12,11 @@ use PhpParser\NodeFinder;
 use PhpParser\ParserFactory;
 use PHPStan\DependencyInjection\ContainerFactory;
 use PHPUnit\Framework\TestCase;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PHPStanRules\CognitiveComplexity\AstCognitiveComplexityAnalyzer;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SymplifyKernel\ValueObject\ShouldNotHappenException;
 
 final class AstCognitiveComplexityAnalyzerTest extends TestCase
 {

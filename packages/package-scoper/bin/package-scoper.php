@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 // decoupled in own "*.php" file, so ECS, Rector and PHPStan works out of the box here
 
-use Symplify\PackageScoper\HttpKernel\PackageScoperKernel;
+use Symplify\PackageScoper\HttpKernel\ValueObject\PackageScoperKernel;
 use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 
 # autoload

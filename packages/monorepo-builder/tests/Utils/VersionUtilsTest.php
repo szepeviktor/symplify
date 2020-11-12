@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Tests\Utils;
 
 use Iterator;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Utils\VersionUtils;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Utils\ValueObject\VersionUtils;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class VersionUtilsTest extends AbstractKernelTestCase
 {
     /**
-     * @var VersionUtils
+     * @var \Symplify\MonorepoBuilder\Utils\ValueObject\VersionUtils
      */
     private $versionUtils;
 

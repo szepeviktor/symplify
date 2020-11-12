@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoProtectedElementInFinalClassRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoProtectedElementInFinalClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoProtectedElementInFinalClassRule;
 
 final class NoProtectedElementInFinalClassRuleTest extends AbstractServiceAwareRuleTestCase
 {

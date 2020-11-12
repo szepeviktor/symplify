@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenParentClassRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenParentClassRule
         tags: [phpstan.rules.rule]
         arguments:
             forbiddenParentClasses:
@@ -9,4 +9,4 @@ services:
             forbiddenParentClassesWithPreferences:
                 Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule\Source\UnwantedClass: Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule\Source\PreferredClass
 
-    - Symplify\PackageBuilder\Matcher\ArrayStringAndFnMatcher
+    - Symplify\PackageBuilder\Matcher\ValueObject\ArrayStringAndFnMatcher

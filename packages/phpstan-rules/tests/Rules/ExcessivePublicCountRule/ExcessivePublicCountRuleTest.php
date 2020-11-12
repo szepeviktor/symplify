@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ExcessivePublicCountRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ExcessivePublicCountRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ExcessivePublicCountRule;
 
 final class ExcessivePublicCountRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\RequireMethodCallArgumentConstantRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\RequireMethodCallArgumentConstantRule
         tags: [phpstan.rules.rule]
         arguments:
             constantArgByMethodByType:
@@ -12,4 +12,4 @@ services:
                     getAttribute: [0]
                     setAttribute: [0]
 
-    - Symplify\PHPStanRules\Types\ContainsTypeAnalyser
+    - Symplify\PHPStanRules\Types\ValueObject\ContainsTypeAnalyser

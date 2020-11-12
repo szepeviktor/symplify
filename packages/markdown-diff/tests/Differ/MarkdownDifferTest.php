@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Symplify\MarkdownDiff\Tests\Differ;
 
-use Symplify\MarkdownDiff\Differ\MarkdownDiffer;
-use Symplify\MarkdownDiff\Tests\HttpKernel\MarkdownDiffKernel;
+use Symplify\MarkdownDiff\Differ\ValueObject\MarkdownDiffer;
+use Symplify\MarkdownDiff\Tests\HttpKernel\ValueObject\MarkdownDiffKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 
 final class MarkdownDifferTest extends AbstractKernelTestCase
 {
     /**
-     * @var MarkdownDiffer
+     * @var \Symplify\MarkdownDiff\Differ\ValueObject\MarkdownDiffer
      */
     private $markdownDiffer;
 

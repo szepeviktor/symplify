@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\NoReturnArrayVariableListRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\NoReturnArrayVariableListRule;
+use Symplify\PHPStanRules\Rules\ValueObject\NoReturnArrayVariableListRule;
 
 final class NoReturnArrayVariableListRuleTest extends AbstractServiceAwareRuleTestCase
 {

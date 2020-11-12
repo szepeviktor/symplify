@@ -7,12 +7,12 @@ namespace Symplify\Autodiscovery\Tests\Yaml;
 use Iterator;
 use PHPUnit\Framework\TestCase;
 use Symplify\Autodiscovery\ValueObject\ServiceConfig;
-use Symplify\Autodiscovery\Yaml\CommonNamespaceResolver;
+use Symplify\Autodiscovery\Yaml\ValueObject\CommonNamespaceResolver;
 
 final class CommonNamespaceResolverTest extends TestCase
 {
     /**
-     * @var CommonNamespaceResolver
+     * @var \Symplify\Autodiscovery\Yaml\ValueObject\CommonNamespaceResolver
      */
     private $commonNamespaceResolver;
 

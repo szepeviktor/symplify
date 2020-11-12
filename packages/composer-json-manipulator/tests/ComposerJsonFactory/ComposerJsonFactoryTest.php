@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Symplify\ComposerJsonManipulator\Tests\ComposerJsonFactory;
 
 use Symplify\ComposerJsonManipulator\ComposerJsonFactory;
-use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ComposerJsonManipulatorKernel;
+use Symplify\ComposerJsonManipulator\Tests\HttpKernel\ValueObject\ComposerJsonManipulatorKernel;
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class ComposerJsonFactoryTest extends AbstractKernelTestCase
 {
@@ -32,7 +32,7 @@ final class ComposerJsonFactoryTest extends AbstractKernelTestCase
         $fileInfo = $this->composerJson->getFileInfo();
         $this->assertInstanceOf(SmartFileInfo::class, $fileInfo);
 
-        /** @var SmartFileInfo $fileInfo */
+        /** @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo $fileInfo */
         $this->assertCount(2, $this->composerJson->getAllClassmaps());
 
         $this->assertSame(['directory', 'src'], $this->composerJson->getPsr4AndClassmapDirectories());

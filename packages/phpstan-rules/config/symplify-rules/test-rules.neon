@@ -1,18 +1,18 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\NoConstructorInTestRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\NoConstructorInTestRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\CheckNotTestsNamespaceOutsideTestsDirectoryRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\CheckNotTestsNamespaceOutsideTestsDirectoryRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenTestsNamespaceOutsideTestsDirectoryRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenTestsNamespaceOutsideTestsDirectoryRule
         tags: [phpstan.rules.rule]
 
     -
-        class: Symplify\PHPStanRules\Rules\RequireDataProviderTestMethodRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\RequireDataProviderTestMethodRule
         tags: [phpstan.rules.rule]
         arguments:
             classesRequiringDataProvider:

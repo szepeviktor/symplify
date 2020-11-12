@@ -12,13 +12,13 @@ use PHP_CodeSniffer\Standards\PSR2\Sniffs\Classes\PropertyDeclarationSniff;
 use PHP_CodeSniffer\Standards\PSR2\Sniffs\Methods\MethodDeclarationSniff;
 use PHP_CodeSniffer\Util\Common;
 use SlevomatCodingStandard\Sniffs\ControlStructures\AssignmentInConditionSniff;
-use Symplify\CodingStandard\Sniffs\Debug\CommentedOutCodeSniff;
+use Symplify\CodingStandard\Sniffs\Debug\ValueObject\CommentedOutCodeSniff;
 use Symplify\EasyCodingStandard\Application\AppliedCheckersCollector;
-use Symplify\EasyCodingStandard\Console\Style\EasyCodingStandardStyle;
+use Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle;
 use Symplify\EasyCodingStandard\Error\ErrorAndDiffCollector;
-use Symplify\EasyCodingStandard\SniffRunner\Exception\File\NotImplementedException;
-use Symplify\Skipper\Skipper\Skipper;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\EasyCodingStandard\SniffRunner\ValueObject\File\NotImplementedException;
+use Symplify\Skipper\Skipper\ValueObject\Skipper;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 /**
  * @see \Symplify\EasyCodingStandard\SniffRunner\Tests\ValueObject\FileTest
@@ -31,7 +31,7 @@ final class File extends BaseFile
      * @var string[]
      */
     private const REPORT_WARNINGS_SNIFFS = [
-        CommentedOutCodeSniff::class,
+        \Symplify\CodingStandard\Sniffs\Debug\ValueObject\CommentedOutCodeSniff::class,
         AssignmentInConditionSniff::class,
         PropertyDeclarationSniff::class,
         MethodDeclarationSniff::class,
@@ -68,7 +68,7 @@ final class File extends BaseFile
     private $errorAndDiffCollector;
 
     /**
-     * @var Skipper
+     * @var \Symplify\Skipper\Skipper\ValueObject\Skipper
      */
     private $skipper;
 
@@ -78,12 +78,12 @@ final class File extends BaseFile
     private $appliedCheckersCollector;
 
     /**
-     * @var EasyCodingStandardStyle
+     * @var \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle
      */
     private $easyCodingStandardStyle;
 
     /**
-     * @var SmartFileInfo
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileInfo
      */
     private $fileInfo;
 
@@ -92,9 +92,9 @@ final class File extends BaseFile
         string $content,
         Fixer $fixer,
         ErrorAndDiffCollector $errorAndDiffCollector,
-        Skipper $skipper,
+        \Symplify\Skipper\Skipper\ValueObject\Skipper $skipper,
         AppliedCheckersCollector $appliedCheckersCollector,
-        EasyCodingStandardStyle $easyCodingStandardStyle
+        \Symplify\EasyCodingStandard\Console\Style\ValueObject\EasyCodingStandardStyle $easyCodingStandardStyle
     ) {
         $this->path = $path;
         $this->content = $content;
@@ -147,7 +147,7 @@ final class File extends BaseFile
 
     public function getErrorCount(): int
     {
-        throw new NotImplementedException(sprintf(
+        throw new \Symplify\EasyCodingStandard\SniffRunner\ValueObject\File\NotImplementedException(sprintf(
             'Method "%s" is not needed to be public. Use "%s" service.',
             __METHOD__,
             ErrorAndDiffCollector::class
@@ -159,7 +159,7 @@ final class File extends BaseFile
      */
     public function getErrors(): array
     {
-        throw new NotImplementedException(sprintf(
+        throw new \Symplify\EasyCodingStandard\SniffRunner\ValueObject\File\NotImplementedException(sprintf(
             'Method "%s" is not needed to be public. Use "%s" service.',
             __METHOD__,
             ErrorAndDiffCollector::class
@@ -207,7 +207,7 @@ final class File extends BaseFile
     /**
      * @param Sniff[][] $tokenListeners
      */
-    public function processWithTokenListenersAndFileInfo(array $tokenListeners, SmartFileInfo $fileInfo): void
+    public function processWithTokenListenersAndFileInfo(array $tokenListeners, \Symplify\SmartFileSystem\ValueObject\SmartFileInfo $fileInfo): void
     {
         $this->tokenListeners = $tokenListeners;
         $this->fileInfo = $fileInfo;

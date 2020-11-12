@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Testing\Tests\PathResolver;
 
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
-use Symplify\MonorepoBuilder\Testing\PathResolver\PackagePathResolver;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\Testing\PathResolver\ValueObject\PackagePathResolver;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class PackagePathResolverTest extends AbstractKernelTestCase
 {
     /**
-     * @var PackagePathResolver
+     * @var \Symplify\MonorepoBuilder\Testing\PathResolver\ValueObject\PackagePathResolver
      */
     private $packagePathResolver;
 

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\MarkdownDiff\Diff\Output;
 
 use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
-use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor;
 
 /**
  * Creates @see UnifiedDiffOutputBuilder with "$contextLines = 1000;"
@@ -13,7 +13,7 @@ use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
 final class CompleteUnifiedDiffOutputBuilderFactory
 {
     /**
-     * @var PrivatesAccessor
+     * @var \Symplify\PackageBuilder\Reflection\ValueObject\PrivatesAccessor
      */
     private $privatesAccessor;
 

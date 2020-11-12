@@ -6,7 +6,7 @@ namespace Symplify\MonorepoBuilder\Merge\ComposerJsonDecorator;
 
 use Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\MonorepoBuilder\Merge\ComposerJsonMerger;
-use Symplify\MonorepoBuilder\Merge\Configuration\ModifyingComposerJsonProvider;
+use Symplify\MonorepoBuilder\Merge\Configuration\ValueObject\ModifyingComposerJsonProvider;
 use Symplify\MonorepoBuilder\Merge\Contract\ComposerJsonDecoratorInterface;
 
 /**
@@ -20,7 +20,7 @@ final class AppenderComposerJsonDecorator implements ComposerJsonDecoratorInterf
     private $composerJsonMerger;
 
     /**
-     * @var ModifyingComposerJsonProvider
+     * @var \Symplify\MonorepoBuilder\Merge\Configuration\ValueObject\ModifyingComposerJsonProvider
      */
     private $modifyingComposerJsonProvider;
 

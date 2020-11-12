@@ -5,8 +5,8 @@ declare(strict_types=1);
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symplify\PackageBuilder\Reflection\PrivatesCaller;
-use Symplify\PackageBuilder\Yaml\ParametersMerger;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller;
+use Symplify\PackageBuilder\Yaml\ValueObject\ParametersMerger;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();

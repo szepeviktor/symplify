@@ -1,6 +1,6 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\CheckUsedNamespacedNameOnClassNodeRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\CheckUsedNamespacedNameOnClassNodeRule
         tags: [phpstan.rules.rule]
         arguments:
             excludedClasses:

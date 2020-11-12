@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Symplify\PackageBuilder\Tests\Composer;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\PackageBuilder\Composer\VendorDirProvider;
+use Symplify\PackageBuilder\Composer\ValueObject\VendorDirProvider;
 
 final class VendorDirProviderTest extends TestCase
 {

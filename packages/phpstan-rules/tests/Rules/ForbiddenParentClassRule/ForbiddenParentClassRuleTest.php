@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenParentClassRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenParentClassRule;
 use Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule\Fixture\AnotherForbiddenParent;
 use Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule\Fixture\ClassForbiddenParent;
 use Symplify\PHPStanRules\Tests\Rules\ForbiddenParentClassRule\Fixture\HasParentWithPrefference;

@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\ForbiddenPrivateMethodByTypeRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\ForbiddenPrivateMethodByTypeRule;
+use Symplify\PHPStanRules\Rules\ValueObject\ForbiddenPrivateMethodByTypeRule;
 
 final class ForbiddenPrivateMethodByTypeRuleTest extends AbstractServiceAwareRuleTestCase
 {

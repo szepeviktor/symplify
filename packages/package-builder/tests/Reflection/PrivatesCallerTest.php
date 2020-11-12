@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace Symplify\PackageBuilder\Tests\Reflection;
 
 use PHPUnit\Framework\TestCase;
-use Symplify\PackageBuilder\Reflection\PrivatesCaller;
+use Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller;
 use Symplify\PackageBuilder\Tests\Reflection\Source\SomeClassWithPrivateMethods;
 
 final class PrivatesCallerTest extends TestCase
 {
     /**
-     * @var PrivatesCaller
+     * @var \Symplify\PackageBuilder\Reflection\ValueObject\PrivatesCaller
      */
     private $privatesCaller;
 

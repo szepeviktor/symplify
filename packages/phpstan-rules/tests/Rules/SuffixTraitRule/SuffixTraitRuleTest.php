@@ -7,7 +7,7 @@ namespace Symplify\PHPStanRules\Tests\Rules\SuffixTraitRule;
 use Iterator;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanExtensions\Testing\AbstractServiceAwareRuleTestCase;
-use Symplify\PHPStanRules\Rules\SuffixTraitRule;
+use Symplify\PHPStanRules\Rules\ValueObject\SuffixTraitRule;
 
 final class SuffixTraitRuleTest extends AbstractServiceAwareRuleTestCase
 {

@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace Symplify\PHPStanPHPConfig\Tests\PHPStanPHPToNeonConverter;
 
 use Iterator;
-use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
+use Symplify\EasyTesting\DataProvider\ValueObject\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\PHPStanPHPConfig\HttpKernel\PHPStanPHPConfigKernel;
+use Symplify\PHPStanPHPConfig\HttpKernel\ValueObject\PHPStanPHPConfigKernel;
 use Symplify\PHPStanPHPConfig\PHPStanPHPToNeonConverter;
-use Symplify\SmartFileSystem\SmartFileInfo;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class PHPStanPHPToNeonConverterTest extends AbstractKernelTestCase
 {
@@ -21,7 +21,7 @@ final class PHPStanPHPToNeonConverterTest extends AbstractKernelTestCase
     private $phpStanPHPToNeonConverter;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

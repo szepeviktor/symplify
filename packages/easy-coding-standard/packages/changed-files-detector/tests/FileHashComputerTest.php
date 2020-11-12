@@ -6,10 +6,10 @@ namespace Symplify\EasyCodingStandard\ChangedFilesDetector\Tests;
 
 use Migrify\PhpConfigPrinter\YamlToPhpConverter;
 use PhpCsFixer\Fixer\Strict\DeclareStrictTypesFixer;
-use Symplify\EasyCodingStandard\ChangedFilesDetector\FileHashComputer;
-use Symplify\EasyCodingStandard\HttpKernel\EasyCodingStandardKernel;
+use Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\FileHashComputer;
+use Symplify\EasyCodingStandard\HttpKernel\ValueObject\EasyCodingStandardKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
-use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SmartFileSystem\ValueObject\SmartFileSystem;
 
 final class FileHashComputerTest extends AbstractKernelTestCase
 {
@@ -19,12 +19,12 @@ final class FileHashComputerTest extends AbstractKernelTestCase
     private const INCLUDED_CONFIG_FILE = __DIR__ . '/FileHashComputerSource/another-one.php';
 
     /**
-     * @var FileHashComputer
+     * @var \Symplify\EasyCodingStandard\ChangedFilesDetector\ValueObject\FileHashComputer
      */
     private $fileHashComputer;
 
     /**
-     * @var SmartFileSystem
+     * @var \Symplify\SmartFileSystem\ValueObject\SmartFileSystem
      */
     private $smartFileSystem;
 

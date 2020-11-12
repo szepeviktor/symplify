@@ -1,7 +1,7 @@
 
 services:
     -
-        class: Symplify\PHPStanRules\Rules\RequireMethodCallArgumentConstantRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\RequireMethodCallArgumentConstantRule
         tags: [phpstan.rules.rule]
         arguments:
             constantArgByMethodByType:

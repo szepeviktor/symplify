@@ -5,9 +5,9 @@
 declare(strict_types=1);
 
 use Symfony\Component\Console\Input\ArgvInput;
-use Symplify\MonorepoBuilder\HttpKernel\MonorepoBuilderKernel;
+use Symplify\MonorepoBuilder\HttpKernel\ValueObject\MonorepoBuilderKernel;
 use Symplify\MonorepoBuilder\ValueObject\File;
-use Symplify\SetConfigResolver\ConfigResolver;
+use Symplify\SetConfigResolver\ValueObject\ConfigResolver;
 use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 
 # 1. autoload

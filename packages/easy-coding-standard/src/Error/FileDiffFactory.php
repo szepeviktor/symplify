@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Symplify\EasyCodingStandard\Error;
 
-use Symplify\ConsoleColorDiff\Console\Formatter\ColorConsoleDiffFormatter;
+use Symplify\ConsoleColorDiff\Console\Formatter\ValueObject\ColorConsoleDiffFormatter;
 use Symplify\EasyCodingStandard\ValueObject\Error\FileDiff;
-use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\ValueObject\SmartFileInfo;
 
 final class FileDiffFactory
 {
     /**
-     * @var ColorConsoleDiffFormatter
+     * @var \Symplify\ConsoleColorDiff\Console\Formatter\ValueObject\ColorConsoleDiffFormatter
      */
     private $colorConsoleDiffFormatter;
 

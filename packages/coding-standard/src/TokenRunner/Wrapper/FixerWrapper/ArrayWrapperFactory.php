@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Symplify\CodingStandard\TokenRunner\Wrapper\FixerWrapper;
 
 use PhpCsFixer\Tokenizer\Tokens;
-use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\TokenSkipper;
+use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\TokenSkipper;
 use Symplify\CodingStandard\TokenRunner\ValueObject\BlockInfo;
 use Symplify\CodingStandard\TokenRunner\ValueObject\Wrapper\FixerWrapper\ArrayWrapper;
 
 final class ArrayWrapperFactory
 {
     /**
-     * @var TokenSkipper
+     * @var \Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\ValueObject\TokenSkipper
      */
     private $tokenSkipper;
 

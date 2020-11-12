@@ -1,9 +1,9 @@
 services:
     -
-        class: Symplify\PHPStanRules\Rules\ForbiddenConstructorDependencyByTypeRule
+        class: Symplify\PHPStanRules\Rules\ValueObject\ForbiddenConstructorDependencyByTypeRule
         tags: [phpstan.rules.rule]
         arguments:
             forbiddenTypes:
                 - Psr\Container\ContainerInterface
 
-    - Symplify\PHPStanRules\Naming\SimpleNameResolver
+    - Symplify\PHPStanRules\Naming\ValueObject\SimpleNameResolver

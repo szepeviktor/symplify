@@ -7,8 +7,8 @@ namespace Symplify\PackageBuilder\Tests\DependencyInjection;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symplify\PackageBuilder\DependencyInjection\DefinitionFinder;
-use Symplify\PackageBuilder\Exception\DependencyInjection\DefinitionForTypeNotFoundException;
+use Symplify\PackageBuilder\DependencyInjection\ValueObject\DefinitionFinder;
+use Symplify\PackageBuilder\ValueObject\DependencyInjection\DefinitionForTypeNotFoundException;
 
 final class DefinitionFinderTest extends TestCase
 {
@@ -18,7 +18,7 @@ final class DefinitionFinderTest extends TestCase
     private $containerBuilder;
 
     /**
-     * @var DefinitionFinder
+     * @var \Symplify\PackageBuilder\DependencyInjection\ValueObject\DefinitionFinder
      */
     private $definitionFinder;
 
