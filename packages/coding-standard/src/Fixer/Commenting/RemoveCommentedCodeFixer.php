@@ -20,12 +20,6 @@ use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 final class RemoveCommentedCodeFixer extends AbstractSymplifyFixer implements DocumentedRuleInterface
 {
     /**
-     * @see https://regex101.com/r/uMDMtt/3
-     * @var string
-     */
-    private const COMMENTED_CODE_REGEX = '#\/\/\s+(\$.*|[^"].*\(.*?\));$#';
-
-    /**
      * @var string
      */
     private const ERROR_MESSAGE = 'Remove commented code like "// $one = 1000;" comment';
@@ -42,20 +36,81 @@ final class RemoveCommentedCodeFixer extends AbstractSymplifyFixer implements Do
 
     public function fix(SplFileInfo $file, Tokens $tokens): void
     {
-        $reverseTokens = $this->reverseTokens($tokens);
-        foreach ($reverseTokens as $index => $token) {
-            if (! $token->isGivenKind([T_COMMENT])) {
+        $tokens = token_get_all('<?php '. file_get_contents($file->getRealPath()) .' ?>');
+
+        foreach ($tokens as $token) {
+            if (isset(Tokens::$emptyTokens[$token]['code']) === false) {
+                break;
+            }
+
+            if ($token['code'] === T_WHITESPACE) {
                 continue;
             }
 
-            $originalDocContent = $token->getContent();
-            $cleanedDocContent = Strings::replace($originalDocContent, self::COMMENTED_CODE_REGEX, '');
-            if ($cleanedDocContent !== '') {
+            if (isset(Tokens::$phpcsCommentTokens[$token['code']]) === true) {
+                $lastLineSeen = $token['line'];
                 continue;
             }
 
-            // remove token
-            $tokens->clearAt($index);
+            if ($commentStyle === 'line'
+                && ($lastLineSeen + 1) <= $token['line']
+                && strpos($token['content'], '/*') === 0
+            ) {
+                // First non-whitespace token on a new line is start of a different style comment.
+                break;
+            }
+
+            if ($commentStyle === 'line'
+                && ($lastLineSeen + 1) < $token['line']
+            ) {
+                // Blank line breaks a '//' style comment block.
+                break;
+            }
+
+            /*
+                Trim as much off the comment as possible so we don't
+                have additional whitespace tokens or comment tokens
+            */
+
+            $tokenContent = trim($token['content']);
+            $break        = false;
+
+            if ($commentStyle === 'line') {
+                if (substr($tokenContent, 0, 2) === '//') {
+                    $tokenContent = substr($tokenContent, 2);
+                }
+
+                if (substr($tokenContent, 0, 1) === '#') {
+                    $tokenContent = substr($tokenContent, 1);
+                }
+            } else {
+                if (substr($tokenContent, 0, 3) === '/**') {
+                    $tokenContent = substr($tokenContent, 3);
+                }
+
+                if (substr($tokenContent, 0, 2) === '/*') {
+                    $tokenContent = substr($tokenContent, 2);
+                }
+
+                if (substr($tokenContent, -2) === '*/') {
+                    $tokenContent = substr($tokenContent, 0, -2);
+                    $break        = true;
+                }
+
+                if (substr($tokenContent, 0, 1) === '*') {
+                    $tokenContent = substr($tokenContent, 1);
+                }
+            }//end if
+
+            $content     .= $tokenContent.$phpcsFile->eolChar;
+            $lastLineSeen = $token['line'];
+
+            $lastCommentBlockToken = $i;
+
+            if ($break === true) {
+                // Closer of a block comment found.
+                break;
+            }
         }
     }
 
